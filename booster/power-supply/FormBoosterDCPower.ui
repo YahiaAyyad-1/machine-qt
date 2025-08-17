@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormBoosterDCPower</class>
+ <widget class="QMainWindow" name="FormBoosterDCPower">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booster PS State Machines</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+  <widget class="QGroupBox" name="titleGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>550</y>
+     <width>770</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConfig">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>141</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Configurations</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>770</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>BM State Machine</string>
+   </property>
+   <widget class="QEPushButton" name="btnBMStandBy">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Standby</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>BO-PS-BM:enablePower</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledBMStandby">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledBMRush">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>In Rush 
+Sequence</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stopping 
+Sequence</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledBMStop">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledBMPower">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledBMPulse">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnBMPulse">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>30</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pulse ON</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>BO-PS-BM:enablePulse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBMPower">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>90</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power ON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getReferenceMode</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-PS-BM</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getRMSCurrent</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-PS-BM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledBMInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>130</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBMInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>130</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Interlocks</string>
+    </property>
+   </widget>
+   <widget class="QEShape" name="qeshape_6">
+    <property name="geometry">
+     <rect>
+      <x>474</x>
+      <y>60</y>
+      <width>10</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QEShape::Line</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>0</x>
+      <y>40</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="lineWidth">
+     <UInt>9</UInt>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_3">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_5">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QEShape" name="qeshape_10">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>95</y>
+      <width>130</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QEShape::Line</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>120</x>
+      <y>0</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="lineWidth">
+     <UInt>9</UInt>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_12">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowUp</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>770</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>QF State Machine</string>
+   </property>
+   <widget class="QEPushButton" name="btnQFStandBy">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Standby</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>BO-PS-QF:enablePower</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQFStandby">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQFRush">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>In Rush 
+Sequence</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stopping 
+Sequence</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQFStop">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQFPower">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQFPulse">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnQFPulse">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>30</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pulse ON</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>BO-PS-QF:enablePulse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnQFPower">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>90</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power ON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getReferenceMode</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-PS-QF</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_4">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getRMSCurrent</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-PS-QF</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQFInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>130</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnQFInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>130</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Interlocks</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_6">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_7">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_8">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_9">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_10">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>90</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QEShape" name="qeshape_8">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>60</y>
+      <width>10</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QEShape::Line</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>0</x>
+      <y>40</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="lineWidth">
+     <UInt>9</UInt>
+    </property>
+   </widget>
+   <widget class="QEShape" name="qeshape_9">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>95</y>
+      <width>130</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QEShape::Line</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>120</x>
+      <y>0</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="lineWidth">
+     <UInt>9</UInt>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_11">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowUp</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>770</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>QD State Machine</string>
+   </property>
+   <widget class="QEPushButton" name="btnQDStandBy">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Standby</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>BO-PS-QD:enablePower</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQDStandby">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQDRush">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>In Rush 
+Sequence</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stopping 
+Sequence</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQDStop">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQDPower">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQDPulse">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>30</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnQDPulse">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>30</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pulse ON</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>BO-PS-QD:enablePulse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnQDPower">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>90</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Power ON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_5">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>130</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getReferenceMode</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-PS-QD</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_6">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getRMSCurrent</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-PS-QD</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operation Mode</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="ledQDInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>130</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnQDInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>130</y>
+      <width>100</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Interlocks</string>
+    </property>
+   </widget>
+   <widget class="QEShape" name="qeshape_11">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>95</y>
+      <width>130</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QEShape::Line</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>120</x>
+      <y>0</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="lineWidth">
+     <UInt>9</UInt>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_13">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>21</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowUp</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_14">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QEShape" name="qeshape_12">
+    <property name="geometry">
+     <rect>
+      <x>474</x>
+      <y>60</y>
+      <width>10</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QEShape::Line</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>0</x>
+      <y>40</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="lineWidth">
+     <UInt>9</UInt>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_15">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_16">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_17">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_18">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>30</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QSimpleShape" name="qsimpleshape_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>40</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="shape">
+    <enum>QSimpleShape::arrowRight</enum>
+   </property>
+  </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEShape</class>
+   <extends>QWidget</extends>
+   <header>QEShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

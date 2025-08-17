@@ -1,0 +1,7 @@
+#!/bin/bash
+
+prefix="${1}:image1:"
+echo "PVPrefix=$(echo "$prefix" | sed "s/:/\\\\:/g")" > ~/EPICS_AD_Viewer.properties
+
+~/ImageJ/ImageJ --run EPICS_AD_Viewer
+

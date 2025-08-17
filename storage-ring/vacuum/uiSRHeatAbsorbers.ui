@@ -1,0 +1,3772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiSRHeatAbsorbers</class>
+ <widget class="QMainWindow" name="uiSRHeatAbsorbers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Storage RingHeat Absorbers</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+  <widget class="QGroupBox" name="GBCell5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 05</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC05-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC05-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC5HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=05</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC5HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=05</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC5HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=05</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC5HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=05</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 02</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC02-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC02-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC2HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=02</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC2HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=02</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC2HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=02</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC2HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=02</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell14">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>440</y>
+     <width>261</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 14</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_57">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC14-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_58">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC14-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC14HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=14</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC14HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=14</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC14HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=14</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC14HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=14</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_59">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRM</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC14HAB2S1_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-SRM-FLS:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=14</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 11</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC11-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC11-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC11HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=11</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC11HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=11</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC11HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=11</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC11HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=11</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell6">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>160</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 06</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC06-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC06-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC6HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=06</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC6HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=06</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC6HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=06</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC6HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=06</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Switch 1</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>600</y>
+     <width>540</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>20</y>
+      <width>95</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnReset">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-HAB:reset</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>10</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Switch 2</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="GBCell8">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>230</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 08</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC08-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC08-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC8HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=08</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC8HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=08</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC8HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=08</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC8HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=08</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Switch 1</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="GBCell1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 01</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC01-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC01-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC1HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=01</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC1HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=01</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC1HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=01</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC1HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=01</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 03</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC03-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC03-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC3HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=03</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC3HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=03</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC3HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=03</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC3HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=03</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell12">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>370</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 12</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_55">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC12-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_56">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC12-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC12HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=12</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC12HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=12</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC12HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=12</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC12HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=12</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell13">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 13</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC13-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC13-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC13HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=13</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC13HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=13</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="vledSRC13HAB2S">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=13</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC13HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=13</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell16">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>530</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 16</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_53">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC16-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_54">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC16-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC16HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=16</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC16HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=16</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC16HAB2S">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=16</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC16HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=16</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell4">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>90</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 04</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC04-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC04-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC4HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=04</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC4HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=04</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC4HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=04</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC4HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=04</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell10">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>300</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 10</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC10-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC10-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC10HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=10</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC10HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=10</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC10HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=10</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC10HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=10</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>530</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 15</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC15-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC15-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="Status_31">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=15</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC15HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=15</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="Status_33">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=15</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC15HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=15</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Switch 2</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="GBCell7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 07</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC07-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC07-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC7HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=07</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC7HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=07</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC7HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=07</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC7HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=07</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="GBCell9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Cell 09</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC09-VA-HAB1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRC09-VA-HAB2</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC9HAB1S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=09</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC9HAB1S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB1-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=09</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC9HAB2S2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS2:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=09</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledSRC9HAB2S1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC$(v1)-VA-HAB2-FLS1:isInterlock</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>v1=09</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QESimpleShape::Never</enum>
+    </property>
+   </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormGDX</class>
+ <widget class="QMainWindow" name="FormGDX">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1121</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Libera GDX Grouping</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>1101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>20</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 1</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=1,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=1,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=1,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=1,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 2</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=2,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_5">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=2,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_6">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=2,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_4">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=2,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 3</string>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_7">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=3,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_8">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=3,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_9">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_5">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=3,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_6">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=3,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>110</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 6</string>
+    </property>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_10">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=6,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_11">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=6,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_12">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=6</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_7">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=6,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_8">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=6,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 4</string>
+    </property>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_13">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=4,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_14">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=4,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_15">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_9">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=4,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_10">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=4,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>110</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 5</string>
+    </property>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_16">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=5,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_17">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=5,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_18">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_11">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=5,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_12">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=5,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>210</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 9</string>
+    </property>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_37">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=9,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_38">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=9,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_39">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=9</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_25">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=9,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_26">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=9,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 10</string>
+    </property>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_40">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=10,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_41">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=10,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_42">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_27">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=10,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_28">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=10,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>310</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 12</string>
+    </property>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_43">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=12,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_44">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=12,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_45">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=12</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_29">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=12,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_30">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=12,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_10">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>310</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 11</string>
+    </property>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_46">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=11,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_47">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=11,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_48">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=11</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_31">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=11,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_32">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=11,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 7</string>
+    </property>
+    <widget class="QLabel" name="label_49">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_49">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=7,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_50">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=7,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_51">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=7</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_51">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_33">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=7,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_34">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=7,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_12">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>210</y>
+      <width>221</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 8</string>
+    </property>
+    <widget class="QLabel" name="label_52">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_53">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_52">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=8,s=3</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_53">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s)</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=8,s=4</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_54">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:timeout_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=8</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_54">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timeout</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_35">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=8,s=3</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_36">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera$(l):gdx:grouping:sfp:status$(s):clear</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=8,s=4</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_13">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>10</y>
+      <width>381</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Libera 1 Grouping Out</string>
+    </property>
+    <widget class="QLabel" name="label_55">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP Enabled</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_55">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:enable_sp</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_37">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Enable</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:enable_sp</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_38">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Disable</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:enable_sp</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_39">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>103</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reconnect</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_56">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GbE Reconnect</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_57">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Group Size</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:group_size_sp</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_56">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>80</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:group_size_mon</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>l=3,s=3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_58">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP2 IP</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_59">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP2 MAC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_60">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SFP2 Port</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>120</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:src:ip_sp</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_57">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>120</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:src:ip_mon</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_58">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>140</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:src:mac_mon</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>140</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:src:mac_sp</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_59">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>160</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:src:port_mon</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>160</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:src:port_sp</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_60">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>200</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:dest:ip_mon</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_61">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>220</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:dest:mac_mon</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_62">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>240</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:dest:port_mon</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>240</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:dest:port_sp</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_6">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>220</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:dest:mac_sp</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_7">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>200</y>
+       <width>140</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>libera1:gdx:gbe:dest:ip_sp</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_61">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Recv MAC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_62">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Recv IP</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_63">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Recv Port</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>310</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SFP3 Clear All</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>330</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SFP4 Clear All</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>310</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>330</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>350</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Group Size</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtSize">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>350</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>350</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Set All</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

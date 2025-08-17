@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormBoosterDI</class>
+ <widget class="QMainWindow" name="FormBoosterDI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>361</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booster Diagnostics</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnScopes">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pulsed Elements Scopes (Qt)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>340</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>TL1 Flourescent Screens</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TL1-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>22</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Status</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL1-DI-FOM1:isOut</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>22</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL1-DI-FOM1:isIn</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IN</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL1-DI-FOMS:setOut</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam TL1-DI-CAM2 CAM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>30</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>340</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Booster Flourescent Screens</string>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BOC01-DI-CAM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>22</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC01-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>22</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isOut</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC01-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>42</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isOut</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC01-DI-FOM2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BOC01-DI-CAM2</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_7">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>42</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC01-DI-FOM2</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>62</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isOut</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC02-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BOC02-DI-CAM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_9">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>62</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC02-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_10">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>82</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isOut</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC03-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BOC03-DI-CAM1</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_11">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>82</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):isIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC03-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_4">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IN</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):setIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC01-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_5">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>40</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IN</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):setIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC01-DI-FOM2</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_6">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IN</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):setIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC02-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_7">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>80</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IN</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):setIn</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BOC03-DI-FOM1</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_9">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam BOC01-DI-CAM1 CAM</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_10">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam BOC01-DI-CAM2 CAM</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_11">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam BOC02-DI-CAM1 CAM</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_12">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>80</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam BOC03-DI-CAM1 CAM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>220</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Cameras</string>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BOC03-DI-SRM</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TL2-DI-CAM1</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_13">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam BOC03-DI-SRM-CAM1 CAM</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_14">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cam</string>
+     </property>
+     <property name="program">
+      <string>run-basler-cam TL2-DI-CAM1 CAM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnMoveScreens">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>210</y>
+      <width>110</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move All
+  Screens Out</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_8">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>290</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scope 1</string>
+    </property>
+    <property name="program">
+     <string>javaws.itweb -jnlp http://10.2.4.17/10.2.4.17_2.jnlp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Libera</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>290</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shaker</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>290</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AFG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenSRM">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SRM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenDCCT">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>330</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DCCT</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>410</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scope 3</string>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="program">
+     <string>vnc-osc sr-di-osc3 -username tek_local_admin</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scope 2</string>
+    </property>
+    <property name="program">
+     <string>vnc-osc 10.1.57.22 -username tek_local_admin</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

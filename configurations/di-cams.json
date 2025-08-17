@@ -1,0 +1,94 @@
+{
+    "cams": [
+    {
+        "prefix_p": "TL1-DI-CAM2",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "tl1-cam2"
+    },
+    {
+        "prefix_p": "BOC01-DI-CAM2",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "boc01-cam2"
+    },
+    {
+        "prefix_p": "BOC03-DI-SRM-CAM1",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "boc03-srm-cam1"
+    },
+    {
+        "prefix_p": "TL2-DI-CAM1",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "tl2-cam1"
+    },
+    {
+        "prefix_p": "TL2-DI-CAM2",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "tl2-cam2"
+    },
+    {
+        "prefix_p": "TL2-DI-CAM3",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "tl2-cam3"
+    },
+    {
+        "prefix_p": "TL2-DI-CAM4",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "tl2-cam4"
+    },
+    {
+        "prefix_p": "SRC01-DI-CAM1",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "src01-cam1"
+    },
+    {
+        "prefix_p": "SRC06-DI-CAM1",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "src06-cam1"
+    },
+    {
+        "prefix_p": "SRC14-DI-SRM-CAM1",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "src14-srm-cam1"
+    },
+    {
+        "prefix_p": "SRC16-DI-PNHL",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "1",
+        "docker":   "pinhole"
+    },
+    {
+        "prefix_p": "SRC14-DI-ISRM",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "src14-isrm"
+    },
+    {
+        "prefix_p": "ACE2-CAM",
+        "prefix_r": "CAM",
+        "model":    "Basler",
+        "profile":  "0",
+        "docker":   "ace2"
+    }]
+}

@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormLiberaControl</class>
+ <widget class="QMainWindow" name="FormLiberaControl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Libera Control</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>950</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>20</y>
+       <width>82</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>960</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(group)</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_5">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:SETSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_2">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DIAG_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_3">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DSC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_4">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:AUTOSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_3">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KX_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN:AGC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:TRIGDLY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>960</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(group)</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_6">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:SETSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_5">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DIAG_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_6">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DSC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_7">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_7">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:AUTOSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_8">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KX_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN:AGC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_9">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:TRIGDLY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_10">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>960</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(group)</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_16">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:SETSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_13">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DIAG_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_14">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DSC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_17">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_15">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:AUTOSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_18">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KX_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_16">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN:AGC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_19">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:TRIGDLY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_20">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>960</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BO-DI-LIB1</string>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(group)</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB1</string>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_31">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:SETSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_25">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DIAG_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_26">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DSC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_32">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_27">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:AUTOSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_33">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KX_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_28">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN:AGC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_34">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:TRIGDLY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_35">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>960</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(group)</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_46">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:SETSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_37">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DIAG_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_38">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DSC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_47">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_39">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:AUTOSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_48">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KX_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_40">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN:AGC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_49">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:TRIGDLY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_50">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>960</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>$(group)</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_51">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:SETSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_41">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DIAG_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_42">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:DSC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_52">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_43">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>0</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:AUTOSW_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_53">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KX_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QEComboBox" name="qecombobox_44">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:ATTEN:AGC_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_54">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:TRIGDLY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QENumericEdit" name="qenumericedit_55">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>0</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(group):CF:KY_S</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>group=BO-DI-LIB6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="leadingZeros">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99.000000000000000</double>
+     </property>
+     <property name="addUnits">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Trigger Delay</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attenuation</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AGC Status</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>50</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>KX</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>10</y>
+      <width>50</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>KY</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Orientation</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Signal Conditioning</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Switch Settings</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Switch Position</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QENumericEdit</class>
+   <extends>QWidget</extends>
+   <header>QENumericEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESubstitutedLabel</class>
+   <extends>QLabel</extends>
+   <header>QESubstitutedLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormCorrectorsReadings</class>
+ <widget class="QMainWindow" name="FormCorrectorsReadings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>181</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Correctors Readings</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>440</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>20</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QELabel" name="lblRmon">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getRmon</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTempCC_5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getLabel</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVmon">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>30</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getVmon</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R Monitor</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTempCC_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getApplication</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>System Priority</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTempCC_6">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>70</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getNIOSVersion</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QE::Floating</enum>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTempCC_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getFPGAVersion</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>I Load</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Slow Inputs</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FPGA Version</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>70</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NIOS Version</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblILoad">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getIload</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PSI Label</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>V Monitor</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblSlowIn">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>70</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getSlowInputs</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>16</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Application</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTempCC_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>90</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getPriority</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTempCC_7">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>90</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getDSPVersion</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="forceSign">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QE::Floating</enum>
+    </property>
+    <property name="radix">
+     <number>10</number>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Fixed</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DSP Version</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

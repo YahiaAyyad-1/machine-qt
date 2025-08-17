@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormPlungerMotors</class>
+ <widget class="QMainWindow" name="FormPlungerMotors">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>704</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Plunger Motors</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="GBCavityP2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Cavity 1</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High Limit</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblTempP2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.RBV</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="arrayIndex">
+      <number>0</number>
+     </property>
+     <property name="allowDrop">
+      <bool>false</bool>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QE::User</enum>
+     </property>
+     <property name="precision">
+      <number>1</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>true</bool>
+     </property>
+     <property name="leadingZero">
+      <bool>true</bool>
+     </property>
+     <property name="trailingZeros">
+      <bool>true</bool>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+     <property name="localEnumeration">
+      <string/>
+     </property>
+     <property name="format" stdset="0">
+      <enum>QE::Default</enum>
+     </property>
+     <property name="radix">
+      <number>10</number>
+     </property>
+     <property name="separator" stdset="0">
+      <enum>QE::NoSeparator</enum>
+     </property>
+     <property name="notation" stdset="0">
+      <enum>QE::Fixed</enum>
+     </property>
+     <property name="arrayAction" stdset="0">
+      <enum>QE::Ascii</enum>
+     </property>
+     <property name="updateOption" stdset="0">
+      <enum>QELabel::Text</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low Limit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move Abs.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tweak</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseP2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.LLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblVoltageP2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.HLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.VELO</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.VAL</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.HLS</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.LLS</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.TWR</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.TWF</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseErrorP2_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:GalilAi0_MON.VAL</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>3</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>104</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.STOP</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.SPMG</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_6">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>200</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_7">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>220</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>3</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_11">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>110</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV1.TWV</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBCavityP2_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>331</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Cavity 2</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High Limit</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblTempP2_3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.RBV</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="arrayIndex">
+      <number>0</number>
+     </property>
+     <property name="allowDrop">
+      <bool>false</bool>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QE::User</enum>
+     </property>
+     <property name="precision">
+      <number>1</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>true</bool>
+     </property>
+     <property name="leadingZero">
+      <bool>true</bool>
+     </property>
+     <property name="trailingZeros">
+      <bool>true</bool>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+     <property name="localEnumeration">
+      <string/>
+     </property>
+     <property name="format" stdset="0">
+      <enum>QE::Default</enum>
+     </property>
+     <property name="radix">
+      <number>10</number>
+     </property>
+     <property name="separator" stdset="0">
+      <enum>QE::NoSeparator</enum>
+     </property>
+     <property name="notation" stdset="0">
+      <enum>QE::Fixed</enum>
+     </property>
+     <property name="arrayAction" stdset="0">
+      <enum>QE::Ascii</enum>
+     </property>
+     <property name="updateOption" stdset="0">
+      <enum>QELabel::Text</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low Limit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move Abs.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tweak</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseP2_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.LLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblVoltageP2_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.HLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.VELO</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_6">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.VAL</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_5">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.HLS</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_6">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.LLS</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_15">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.TWR</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_16">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.TWF</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseErrorP2_6">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:GalilAi1_MON.VAL</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>3</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>104</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.STOP</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_18">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_19">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.SPMG</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_20">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>200</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_21">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>220</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV2.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>3</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBCavityP2_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>331</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Cavity 3</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High Limit</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblTempP2_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.RBV</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="arrayIndex">
+      <number>0</number>
+     </property>
+     <property name="allowDrop">
+      <bool>false</bool>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QE::User</enum>
+     </property>
+     <property name="precision">
+      <number>1</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>true</bool>
+     </property>
+     <property name="leadingZero">
+      <bool>true</bool>
+     </property>
+     <property name="trailingZeros">
+      <bool>true</bool>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+     <property name="localEnumeration">
+      <string/>
+     </property>
+     <property name="format" stdset="0">
+      <enum>QE::Default</enum>
+     </property>
+     <property name="radix">
+      <number>10</number>
+     </property>
+     <property name="separator" stdset="0">
+      <enum>QE::NoSeparator</enum>
+     </property>
+     <property name="notation" stdset="0">
+      <enum>QE::Fixed</enum>
+     </property>
+     <property name="arrayAction" stdset="0">
+      <enum>QE::Ascii</enum>
+     </property>
+     <property name="updateOption" stdset="0">
+      <enum>QELabel::Text</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low Limit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move Abs.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tweak</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseP2_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.LLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblVoltageP2_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.HLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_7">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.VELO</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_8">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.VAL</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_7">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.HLS</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_8">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.LLS</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_22">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.TWR</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_23">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.TWF</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseErrorP2_8">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:GalilAi2_MON.VAL</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>3</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>104</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.STOP</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_25">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_26">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.SPMG</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_27">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>200</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_28">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>220</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV3.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>3</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBCavityP2_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>270</y>
+      <width>331</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Cavity 4</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High Limit</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblTempP2_5">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.RBV</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="arrayIndex">
+      <number>0</number>
+     </property>
+     <property name="allowDrop">
+      <bool>false</bool>
+     </property>
+     <property name="userLevelEnabled" stdset="0">
+      <enum>QE::User</enum>
+     </property>
+     <property name="precision">
+      <number>1</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>true</bool>
+     </property>
+     <property name="leadingZero">
+      <bool>true</bool>
+     </property>
+     <property name="trailingZeros">
+      <bool>true</bool>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+     <property name="localEnumeration">
+      <string/>
+     </property>
+     <property name="format" stdset="0">
+      <enum>QE::Default</enum>
+     </property>
+     <property name="radix">
+      <number>10</number>
+     </property>
+     <property name="separator" stdset="0">
+      <enum>QE::NoSeparator</enum>
+     </property>
+     <property name="notation" stdset="0">
+      <enum>QE::Fixed</enum>
+     </property>
+     <property name="arrayAction" stdset="0">
+      <enum>QE::Ascii</enum>
+     </property>
+     <property name="updateOption" stdset="0">
+      <enum>QELabel::Text</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low Limit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move Abs.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tweak</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseP2_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.LLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblVoltageP2_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.HLM</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>2</number>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_9">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.VELO</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_10">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.VAL</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_9">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.HLS</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_10">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.LLS</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_29">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.TWR</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_30">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>110</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.TWF</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="lblPhaseErrorP2_10">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:GalilAi3_MON.VAL</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="precision">
+      <number>3</number>
+     </property>
+     <property name="useDbPrecision">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>N/A</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_31">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>104</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>STOP</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.STOP</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_32">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_33">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.SPMG</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_34">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>200</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_35">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>220</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Go</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SRC03-MO-MC1:SRC03-STP-CAV4.SPMG</string>
+     </property>
+     <property name="clickText">
+      <string>3</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Controller Msg</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageP2_6">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>540</y>
+      <width>391</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-MO-MC1:ERROR_MON</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string/>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>681</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>20</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_12">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>120</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-MO-MC1:SRC03-STP-CAV2.TWV</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_13">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>380</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-MO-MC1:SRC03-STP-CAV3.TWV</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_14">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>380</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-MO-MC1:SRC03-STP-CAV4.TWV</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

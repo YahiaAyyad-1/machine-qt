@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiBOCooling</class>
+ <widget class="QMainWindow" name="uiBOCooling">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booster Cooling</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>320</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnReset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>82</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Cell 1</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB1:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB1</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB2</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB2:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB3</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB3:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB4</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB4:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB5</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB5:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Cell 2</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape_76">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB1:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_76">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB1</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_77">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB2</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_77">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB2:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_78">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB3</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_78">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB3:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_79">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB4</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_79">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB4:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_80">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB5</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_80">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB5:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=02</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>150</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Cell 4</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape_86">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB1:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_86">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB1</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_87">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB2</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_87">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB2:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_88">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB3</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_88">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB3:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_89">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB4</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_89">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB4:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_90">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB5</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_90">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB5:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=04</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Cell 3</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape_91">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB1:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_91">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB1</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_92">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB2</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_92">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB2:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_93">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB3</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_93">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB3:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_94">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB4</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_94">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB4:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_95">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB5</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_95">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB5:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=03</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>300</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Cell 6</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape_96">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB1:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_96">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB1</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_97">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB2</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_97">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB2:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_98">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB3</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_98">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB3:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_99">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB4</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_99">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB4:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_100">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB5</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_100">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB5:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=06</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Cell 5</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape_101">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB1:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=05</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_101">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB1</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_102">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB2</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_102">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB2:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=05</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_103">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB3</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_103">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB3:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=05</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_104">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB4</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_104">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB4:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=05</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESubstitutedLabel" name="qesubstitutedlabel_105">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="labelText" stdset="0">
+      <string>BOC$(cell)-CO-SB5</string>
+     </property>
+     <property name="textSubstitutions" stdset="0">
+      <string>cell=01</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_105">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>50</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>BOC$(cell)-CO-SB5:isInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>cell=05</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESubstitutedLabel</class>
+   <extends>QLabel</extends>
+   <header>QESubstitutedLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

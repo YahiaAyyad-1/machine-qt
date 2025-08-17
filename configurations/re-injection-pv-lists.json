@@ -1,0 +1,28 @@
+{
+    "pv_lists": [{
+        "name": "pvListVC",
+        "pvs": [
+            "SRC01-PS-VC1:getFaults", "SRC01-PS-VC2:getFaults", "SRC02-PS-VC1:getFaults", "SRC02-PS-VC2:getFaults",
+            "SRC03-PS-VC1:getFaults", "SRC03-PS-VC2:getFaults", "SRC04-PS-VC1:getFaults", "SRC04-PS-VC2:getFaults",
+            "SRC05-PS-VC1:getFaults", "SRC05-PS-VC2:getFaults", "SRC06-PS-VC1:getFaults", "SRC06-PS-VC2:getFaults",
+            "SRC07-PS-VC1:getFaults", "SRC07-PS-VC2:getFaults", "SRC08-PS-VC1:getFaults", "SRC08-PS-VC2:getFaults",
+            "SRC09-PS-VC1:getFaults", "SRC09-PS-VC2:getFaults", "SRC10-PS-VC1:getFaults", "SRC10-PS-VC2:getFaults",
+            "SRC11-PS-VC1:getFaults", "SRC11-PS-VC2:getFaults", "SRC12-PS-VC1:getFaults", "SRC12-PS-VC2:getFaults",
+            "SRC13-PS-VC1:getFaults", "SRC13-PS-VC2:getFaults", "SRC14-PS-VC1:getFaults", "SRC14-PS-VC2:getFaults",
+            "SRC15-PS-VC1:getFaults", "SRC15-PS-VC2:getFaults", "SRC16-PS-VC1:getFaults", "SRC16-PS-VC2:getFaults"
+        ]
+    },
+    {
+        "name": "pvListHC",
+        "pvs": [
+            "SRC01-PS-HC1:getFaults", "SRC01-PS-HC2:getFaults", "SRC02-PS-HC1:getFaults", "SRC02-PS-HC2:getFaults",
+            "SRC03-PS-HC1:getFaults", "SRC03-PS-HC2:getFaults", "SRC04-PS-HC1:getFaults", "SRC04-PS-HC2:getFaults",
+            "SRC05-PS-HC1:getFaults", "SRC05-PS-HC2:getFaults", "SRC06-PS-HC1:getFaults", "SRC06-PS-HC2:getFaults",
+            "SRC07-PS-HC1:getFaults", "SRC07-PS-HC2:getFaults", "SRC08-PS-HC1:getFaults", "SRC08-PS-HC2:getFaults",
+            "SRC09-PS-HC1:getFaults", "SRC09-PS-HC2:getFaults", "SRC10-PS-HC1:getFaults", "SRC10-PS-HC2:getFaults",
+            "SRC11-PS-HC1:getFaults", "SRC11-PS-HC2:getFaults", "SRC12-PS-HC1:getFaults", "SRC12-PS-HC2:getFaults",
+            "SRC13-PS-HC1:getFaults", "SRC13-PS-HC2:getFaults", "SRC14-PS-HC1:getFaults", "SRC14-PS-HC2:getFaults",
+            "SRC15-PS-HC1:getFaults", "SRC15-PS-HC2:getFaults", "SRC16-PS-HC1:getFaults", "SRC16-PS-HC2:getFaults"
+        ]
+    }]
+}

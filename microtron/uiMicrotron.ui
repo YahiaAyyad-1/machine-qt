@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiMicrotron</class>
+ <widget class="QMainWindow" name="uiMicrotron">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Microtron</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources.qrc">
+    <normaloff>:/images/logo.jpg</normaloff>:/images/logo.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>271</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>     Magnet</string>
+    </property>
+    <widget class="QESimpleShape" name="qesimpleshape_6">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>0</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="edgeColour">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>20</red>
+       <green>60</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>5</red>
+       <green>240</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:getShutdownCondition.B3</string>
+     </property>
+     <property name="edgeVariable" stdset="0">
+      <string>MI-PS-MM:getShutdownCondition.B3.SEVR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Output Current</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:getCurrent</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ramp Up</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ready</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ramp Down</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:isRemoteShutdown.B2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>180</y>
+       <width>121</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>External Interlock</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:isEarthLeakageInterlock</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Earth Leak</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnRampUp">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ramp Up</string>
+     </property>
+     <property name="program">
+      <string>gnome-terminal --geometry 100x30 -x Main_Magnet_Ramp.py --up</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnRampDown">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ramp Down</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+     <property name="program">
+      <string>gnome-terminal --geometry 100x30 -x Main_Magnet_Ramp.py --down</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnMagnetReset">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>180</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:resetEarthLeakage</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnMagnetOn">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>0</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:enable</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnMagnetOff">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:enable</string>
+     </property>
+     <property name="clickText">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledRampUp">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Status</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledRampReady">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Status</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledRampDown">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Status</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSetCurrent">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>200</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>set current</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PS-MM:getVoltage</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>46</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Voltage</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string># Cycles</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCycles">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>150</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCycle">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cycle</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ramp Error</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledRampError">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>571</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>10</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnReset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>103</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Scope</string>
+     </property>
+     <property name="program">
+      <string>vnc-osc 10.1.57.21 -username tek_local_admin</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTimers">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>84</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Timers</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnScope">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Scope (Qt)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QEPushButton" name="btnPowerOn">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-PS:enableRackPower</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnPowerOff">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OFF</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-PS:disableRackPower</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="modulus">
+     <number>2</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-PS:isRackPowerEnabled</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Main Power</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>52</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Vacuum</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>52</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="modulus">
+     <number>2</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-VA-IMG1-IMG2:isVacuumInterlock</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_25">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>32</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="modulus">
+     <number>2</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-RF-WG:isPressureInterlock</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>32</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Waveguide Pressure</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>32</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="edgeWidth">
+     <number>1</number>
+    </property>
+    <property name="modulus">
+     <number>2</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-CO:isWaterFlowInterlock</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Always</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>32</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Water Flow</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>350</y>
+      <width>281</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Trigger</string>
+    </property>
+    <widget class="QPushButton" name="btnSequencer">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sequencer</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>52</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>IMG Error</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_17">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>52</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="modulus">
+     <number>2</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-VA-IMG:isError</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>271</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>AGPS</string>
+    </property>
+    <widget class="QEPushButton" name="btnFilamentOn_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Standby</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>AGPS:setCommand</string>
+     </property>
+     <property name="clickText">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnFilamentOff_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>AGPS:setCommand</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filament</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>AGPS:getState</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>State</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledGunState">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour2" stdset="0">
+      <color>
+       <red>252</red>
+       <green>233</green>
+       <blue>79</blue>
+      </color>
+     </property>
+     <property name="colour3" stdset="0">
+      <color>
+       <red>239</red>
+       <green>41</green>
+       <blue>41</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Warnings</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledGunWarnings">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>60</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>252</red>
+       <green>233</green>
+       <blue>79</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Details</string>
+     </property>
+     <property name="program">
+      <string>agps-qt</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>281</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Modulators</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+     </property>
+     <property name="title">
+      <string>EGUN</string>
+     </property>
+     <widget class="QELabel" name="qelabel_3">
+      <property name="geometry">
+       <rect>
+        <x>107</x>
+        <y>50</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):getState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-GUN</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_3">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OFF</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-GUN</string>
+      </property>
+      <property name="pressText">
+       <string>0</string>
+      </property>
+      <property name="clickText">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledGunModState">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>50</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>186</red>
+        <green>189</green>
+        <blue>182</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>240</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour2" stdset="0">
+       <color>
+        <red>0</red>
+        <green>205</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="colour3" stdset="0">
+       <color>
+        <red>239</red>
+        <green>41</green>
+        <blue>41</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>50</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>State</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_5">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trig ON</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-GUN</string>
+      </property>
+      <property name="pressText">
+       <string>9</string>
+      </property>
+      <property name="clickText">
+       <string>9</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_6">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HV ON</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-GUN</string>
+      </property>
+      <property name="pressText">
+       <string>6</string>
+      </property>
+      <property name="clickText">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_4">
+      <property name="geometry">
+       <rect>
+        <x>66</x>
+        <y>20</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Standby</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-GUN</string>
+      </property>
+      <property name="pressText">
+       <string>3</string>
+      </property>
+      <property name="clickText">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_31">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>107</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="modulus">
+       <number>2</number>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>MI-PSS-PLC:isTriggerInterlock</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>36</x>
+        <y>107</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>PSS</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_12">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>0</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+      <property name="program">
+       <string>modulator-gui GUN</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_13">
+      <property name="geometry">
+       <rect>
+        <x>107</x>
+        <y>90</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Interlocks</string>
+      </property>
+      <property name="program">
+       <string>modulator-gui GUN-Interlocks</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledGunInterlocks">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>186</red>
+        <green>189</green>
+        <blue>182</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>205</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="colour2" stdset="0">
+       <color>
+        <red>186</red>
+        <green>189</green>
+        <blue>182</blue>
+       </color>
+      </property>
+      <property name="colour3" stdset="0">
+       <color>
+        <red>239</red>
+        <green>41</green>
+        <blue>41</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>70</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trigger enabled</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledGunTrigger">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>60</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour2" stdset="0">
+       <color>
+        <red>0</red>
+        <green>205</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="colour3" stdset="0">
+       <color>
+        <red>239</red>
+        <green>41</green>
+        <blue>41</blue>
+       </color>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>261</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+     </property>
+     <property name="title">
+      <string>MAG</string>
+     </property>
+     <widget class="QELabel" name="qelabel_5">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):getState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-MAG</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_7">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OFF</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-MAG</string>
+      </property>
+      <property name="pressText">
+       <string>0</string>
+      </property>
+      <property name="clickText">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledGunModState_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>186</red>
+        <green>189</green>
+        <blue>182</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>240</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour2" stdset="0">
+       <color>
+        <red>0</red>
+        <green>205</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="colour3" stdset="0">
+       <color>
+        <red>239</red>
+        <green>41</green>
+        <blue>41</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>State</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_8">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trig ON</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-MAG</string>
+      </property>
+      <property name="pressText">
+       <string>9</string>
+      </property>
+      <property name="clickText">
+       <string>9</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_9">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HV ON</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-MAG</string>
+      </property>
+      <property name="pressText">
+       <string>6</string>
+      </property>
+      <property name="clickText">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_10">
+      <property name="geometry">
+       <rect>
+        <x>66</x>
+        <y>20</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Standby</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):setState</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-MAG</string>
+      </property>
+      <property name="pressText">
+       <string>3</string>
+      </property>
+      <property name="clickText">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_11">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>0</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+      <property name="program">
+       <string>modulator-gui MAG</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_14">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Interlocks</string>
+      </property>
+      <property name="program">
+       <string>modulator-gui MAG-Interlocks</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>50</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remaining Time</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_12">
+      <property name="geometry">
+       <rect>
+        <x>139</x>
+        <y>50</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):getRemainingTime</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=MI-PS-MOD-MAG</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledMagInterlocks">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>110</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>186</red>
+        <green>189</green>
+        <blue>182</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>205</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="colour2" stdset="0">
+       <color>
+        <red>186</red>
+        <green>189</green>
+        <blue>182</blue>
+       </color>
+      </property>
+      <property name="colour3" stdset="0">
+       <color>
+        <red>239</red>
+        <green>41</green>
+        <blue>41</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trigger enabled</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledMagTrigger">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>60</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour2" stdset="0">
+       <color>
+        <red>0</red>
+        <green>205</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="colour3" stdset="0">
+       <color>
+        <red>239</red>
+        <green>41</green>
+        <blue>41</blue>
+       </color>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>46</x>
+       <y>287</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>PSS</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_30">
+     <property name="geometry">
+      <rect>
+       <x>26</x>
+       <y>287</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>5</red>
+       <green>240</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MI-PSS-PLC:isTriggerInterlock</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

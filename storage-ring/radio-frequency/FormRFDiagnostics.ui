@@ -1,0 +1,7293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormRFDiagnostics</class>
+ <widget class="QMainWindow" name="FormRFDiagnostics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1261</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SSA Interlocks</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>660</y>
+      <width>1241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>1150</x>
+       <y>20</y>
+       <width>80</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>610</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>SSA 1</string>
+    </property>
+    <widget class="QLabel" name="label_93">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_100">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow outlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_81">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>70</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_82">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dissipators</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_85">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_89">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Maximum Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_112">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_104">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_97">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>150</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_110">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>170</y>
+       <width>125</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_109">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_94">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow Inlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_103">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_114">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_105">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>110</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_113">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_106">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_101">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>90</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_96">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delta Water Flow</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_98">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>210</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Failed Modules &gt;4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_83">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>130</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_102">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_99">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>190</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_91">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>230</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_0">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_10">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_0_11">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>270</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_0">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_5">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_6">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_7">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_8">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_1_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_0">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_2_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_0">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_1">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_3_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_0">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_1">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_4">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_5">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_6">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_7">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_8">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_4_9">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_0">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_1">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_6">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_7">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_8">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_5_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_0">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_1">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_7">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_8">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_6_9">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_0">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_1">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_2">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_3">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_4">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_5">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_6">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_7">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_8">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_7_9">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_0">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_1">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_4">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_5">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_6">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_7">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_8">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_8_9">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_0">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_1">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_2">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_3">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_4">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_5">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_6">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_7">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_8">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_9_9">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_0">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_1">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_3">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_4">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_5">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_6">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_7">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_8">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA1_10_9">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>40</y>
+      <width>610</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>SSA 2</string>
+    </property>
+    <widget class="QLabel" name="label_95">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_107">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow outlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_84">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>70</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_86">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dissipators</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_87">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_90">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Maximum Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_115">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_108">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_111">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>150</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_116">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>170</y>
+       <width>125</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_117">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_118">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow Inlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_119">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_120">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_121">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>110</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_122">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_123">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_124">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>90</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_125">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delta Water Flow</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_126">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>210</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Failed Modules &gt;4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_88">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>130</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_127">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_128">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>190</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_92">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>230</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_0">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_10">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_0_11">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>270</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_0">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_5">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_6">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_7">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_8">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_1_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_0">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_2_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_0">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_1">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_3_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_0">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_1">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_4">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_5">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_6">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_7">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_8">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_4_9">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_0">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_1">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_6">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_7">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_8">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_5_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_0">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_1">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_7">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_8">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_6_9">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_0">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_1">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_2">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_3">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_4">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_5">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_6">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_7">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_8">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_7_9">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_0">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_1">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_4">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_5">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_6">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_7">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_8">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_8_9">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_0">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_1">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_2">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_3">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_4">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_5">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_6">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_7">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_8">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_9_9">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_0">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_1">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_3">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_4">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_5">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_6">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_7">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_8">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA2_10_9">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>610</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>SSA 3</string>
+    </property>
+    <widget class="QLabel" name="label_129">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_130">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow outlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_131">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>70</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_132">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dissipators</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_133">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_134">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Maximum Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_135">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_136">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_137">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>150</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_138">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>170</y>
+       <width>125</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_139">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_140">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow Inlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_141">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_142">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_143">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>110</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_144">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_145">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_146">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>90</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_147">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delta Water Flow</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_148">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>210</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Failed Modules &gt;4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_149">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>130</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_150">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_151">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>190</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_152">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>230</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_0">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_10">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_0_11">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>270</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_0">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_5">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_6">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_7">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_8">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_1_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_0">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_2_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_0">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_1">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_3_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_0">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_1">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_4">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_5">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_6">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_7">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_8">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_4_9">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_0">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_1">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_6">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_7">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_8">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_5_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_0">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_1">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_7">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_8">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_6_9">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_0">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_1">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_2">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_3">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_4">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_5">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_6">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_7">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_8">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_7_9">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_0">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_1">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_4">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_5">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_6">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_7">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_8">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_8_9">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_0">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_1">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_2">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_3">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_4">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_5">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_6">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_7">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_8">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_9_9">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_0">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_1">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_3">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_4">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_5">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_6">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_7">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_8">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA3_10_9">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>350</y>
+      <width>610</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string>SSA 4</string>
+    </property>
+    <widget class="QLabel" name="label_153">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_154">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow outlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_155">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>70</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_156">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>131</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dissipators</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_157">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_158">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Maximum Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_159">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_160">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_161">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>150</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_162">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>170</y>
+       <width>125</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_163">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thermo Switch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_164">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Water flow Inlet</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_165">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Amplifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_166">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_167">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>110</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.R. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_168">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_169">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Spare Hardware</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_170">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>90</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_171">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delta Water Flow</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_172">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>210</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Failed Modules &gt;4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_173">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>130</y>
+       <width>125</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P.I. 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_174">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Driver</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_175">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>190</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temprature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_176">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>230</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zero Current</string>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_0">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_10">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_0_11">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>270</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_0">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_5">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_6">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_7">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_8">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_1_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_0">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_2_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_0">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_1">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_3_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_0">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_1">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_4">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_5">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_6">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_7">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_8">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_4_9">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_0">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_1">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_3">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_5">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_6">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_7">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_8">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_5_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_0">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_1">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_3">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_7">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_8">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_6_9">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_0">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_1">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_2">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_3">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_4">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_5">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_6">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_7">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_8">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_7_9">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_0">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_1">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_4">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_5">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_6">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_7">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_8">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_8_9">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_0">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_1">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_2">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_3">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_4">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_5">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_6">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_7">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_8">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_9_9">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_0">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_1">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>70</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>90</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_3">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_4">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>130</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_5">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>150</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_6">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>170</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_7">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>190</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_8">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>210</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+    <widget class="QSimpleShape" name="ledSSA4_10_9">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>230</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Profile</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFileName">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>600</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBrowse">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>10</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLoad">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>10</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormBMInterlocks</class>
+ <widget class="QMainWindow" name="FormBMInterlocks">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booster BM Interlocks</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>761</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_68">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>90</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Relay Board 2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="titleGroupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>750</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="mainTitle">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>500</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>16</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#mainTitle {
+	font: 16pt &quot;Ubuntu&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Booster BM Interlocks</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../../resources.qrc">:/images/logo-115x54.jpg</pixmap>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="titleGroupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>640</y>
+         <width>750</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QPushButton" name="btnClose">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>20</y>
+          <width>90</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+       <widget class="QEPushButton" name="btnReset">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset</string>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:reset</string>
+        </property>
+        <property name="writeOnPress">
+         <bool>true</bool>
+        </property>
+        <property name="writeOnRelease">
+         <bool>true</bool>
+        </property>
+        <property name="writeOnClick">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="titleGroupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>120</y>
+         <width>200</width>
+         <height>170</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+       </property>
+       <property name="title">
+        <string>Regulation Interlocks</string>
+       </property>
+       <widget class="QESimpleShape" name="ledReg_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RMS</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledReg_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>EEPROM</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledReg_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_62">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Over Voltage</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledReg_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_63">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>80</y>
+          <width>140</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ADC Voltage Failure</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledReg_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_64">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>100</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CAN Watchdog</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>120</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Over Current</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledReg_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_66">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>140</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Earth Leakage</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledReg_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="titleGroupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>440</y>
+         <width>530</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+       </property>
+       <property name="title">
+        <string>Software Interlocks</string>
+       </property>
+       <widget class="QESimpleShape" name="ledSoft_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.B0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>EEPROM</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.B1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>State Machine</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.B2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regulation Board</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.B3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>80</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Relay Board 2 or 3</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.B9</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>100</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Silent Regulation</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.BA</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>120</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Silent Relay 1</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.BB</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>140</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Silent Relay 2</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getMasterSoftwareInterlocks.BC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>160</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CAN Watchdog</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>EEPROM</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_9">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave1SoftwareInterlocks.B0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>State Machine</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_10">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave1SoftwareInterlocks.B1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_54">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regulation Board</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_11">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave1SoftwareInterlocks.B2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_55">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>80</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CAN Watchdog</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_12">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave1SoftwareInterlocks.BC</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_13">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave2SoftwareInterlocks.B0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>EEPROM</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_14">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave2SoftwareInterlocks.B1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_57">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>State Machine</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_15">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave2SoftwareInterlocks.B2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Regulation Board</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledSoft_16">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>BO-PS-BM:getSlave2SoftwareInterlocks.BC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_59">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>80</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CAN Watchdog</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="titleGroupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>530</width>
+         <height>310</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+       </property>
+       <property name="title">
+        <string>Hardware Interlocks</string>
+       </property>
+       <widget class="QESimpleShape" name="ledHard_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Fan</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Door Open</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Phase</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>80</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DC ON</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>100</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp TM1</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>120</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Emergency</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>140</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Oscillations</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>160</y>
+          <width>150</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp RB1-RB6</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>180</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp L201-L202</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>200</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DCCT</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>220</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Slave 1 Interlock</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>240</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Slave 2 Interlock</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>260</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Extern 0</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>280</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Extern 2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp IGBT MOD 1</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_15">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Unbalanced MOD 1</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_16">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp Self MOD 1</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_17">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>80</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PWM MOD 1</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_18">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>100</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp IGBT MOD 2</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_19">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>100</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>120</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Unbalanced MOD 2</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_20">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>120</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>140</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp Self MOD 2</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_21">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>140</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>160</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PWDM MOD 2</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_22">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>160</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_23">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>180</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_24">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>200</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_25">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>220</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_26">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>240</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>260</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Water</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_27">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>260</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>280</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Auxiliary 15V</string>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_28">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>280</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_29">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_30">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>40</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_31">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>60</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_32">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>80</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_33">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>100</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_34">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>120</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_35">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>140</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_36">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>160</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_37">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>180</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_38">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>200</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_39">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>220</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_40">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>240</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_41">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>260</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QESimpleShape" name="ledHard_42">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>280</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="ledType">
+         <enum>QSimpleShape::Error</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>60</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp Self MOD 4</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>20</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp IGBT MOD 4</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>40</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Unbalanced MOD 4</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>80</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PWM MOD 4</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>140</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp Self MOD 5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>100</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp IGBT MOD 5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>120</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Unbalanced MOD 5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>160</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PWM MOD 5</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>220</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp Self MOD 6</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>180</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp IGBT MOD 6</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>200</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Unbalanced MOD 6</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>240</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PWM MOD 6</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>260</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PSS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>280</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Synchro Box OFF</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>240</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp IGBT MOD 3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>200</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Temp Self MOD 3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>180</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Unbalanced MOD 3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>220</y>
+          <width>130</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PWM MOD 3</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_67">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>90</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Relay Board 1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_69">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>90</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Relay Board 3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

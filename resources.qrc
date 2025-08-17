@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/logo.jpg</file>
+        <file>images/logo-115x54.jpg</file>
+        <file>images/switch_full_view_off.jpg</file>
+        <file>images/switch_full_view_on.jpg</file>
+        <file>stylesheets/border-groupbox.qss</file>
+        <file>images/arrow.png</file>
+        <file>images/scraper.bmp</file>
+        <file>profiles/all-pvs.req</file>
+        <file>profiles/injector-pvs.req</file>
+        <file>profiles/sr-pvs.req</file>
+        <file>profiles/test.req</file>
+        <file>images/CAEN-logo.png</file>
+        <file>images/wiggler-c09.png</file>
+        <file>images/c10.png</file>
+        <file>images/c11.png</file>
+        <file>configurations/bpms.txt</file>
+        <file>configurations/sr-ps-parameters.txt</file>
+        <file>profiles/bbb-frontend.req</file>
+        <file>profiles/rf_profile.txt</file>
+        <file>scripts/run-ad-cam</file>
+        <file>scripts/run-ad-viewer</file>
+        <file>configurations/sr-vacuum.txt</file>
+        <file>configurations/sr-correctors-faults.txt</file>
+        <file>configurations/sr-heat-absorbers.txt</file>
+        <file>configurations/rf-thermocouples.txt</file>
+        <file>images/pinhole.png</file>
+        <file>configurations/re-injection-pv-lists.json</file>
+        <file>configurations/di-cams.txt</file>
+        <file>configurations/di-cams.json</file>
+        <file>configurations/ioc-manager.txt</file>
+    </qresource>
+</RCC>

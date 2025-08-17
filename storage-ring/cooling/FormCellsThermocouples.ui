@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormCellsThermocouples</class>
+ <widget class="QMainWindow" name="FormCellsThermocouples">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>465</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SR Cells THC</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+    <item>
+     <widget class="QGroupBox" name="titleGroupBox_4">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+      </property>
+      <property name="title">
+       <string>Storage Ring Thermocouples</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>30</y>
+         <width>198</width>
+         <height>180</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="ltThermocouplesCol1">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>233</x>
+         <y>30</y>
+         <width>198</width>
+         <height>180</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="ltThermocouplesCol2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>18</x>
+         <y>212</y>
+         <width>114</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SR-1 AHU Average</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_30">
+       <property name="geometry">
+        <rect>
+         <x>134</x>
+         <y>212</y>
+         <width>70</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>SASR1-CO:getAvgTemp</string>
+       </property>
+       <property name="precision">
+        <number>2</number>
+       </property>
+       <property name="useDbPrecision">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>236</x>
+         <y>212</y>
+         <width>114</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SR-2 AHU Average</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_31">
+       <property name="geometry">
+        <rect>
+         <x>352</x>
+         <y>212</y>
+         <width>70</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>SASR2-CO:getAvgTemp</string>
+       </property>
+       <property name="precision">
+        <number>2</number>
+       </property>
+       <property name="useDbPrecision">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="titleGroupBox_2">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>329</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnClose">
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

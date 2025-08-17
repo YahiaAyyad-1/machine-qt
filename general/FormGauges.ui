@@ -1,0 +1,3109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormGauges</class>
+ <widget class="QWidget" name="FormGauges">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SR Gauges</string>
+  </property>
+  <widget class="QGroupBox" name="titleGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>931</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>822</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClose">
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>450</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string>Q1</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSS1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAV1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAV2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAV3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CAV4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG ON SP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG OFF SP</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC01-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_2">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_2">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC01-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_3">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_3">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC02-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_4">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOnSetpoint4</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_4">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG5:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOffSetpoint4</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_5">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:setOnSetpoint5</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_5">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC04-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_5">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC1:getOffSetpoint5</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_6">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_6">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_6">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_7">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>160</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_7">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>160</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_7">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>160</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_8">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>180</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_8">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>180</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG3:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_8">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>180</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_9">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>200</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOnSetpoint4</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_9">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>200</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG4:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_9">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC2:getOffSetpoint4</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>450</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string>Q2</string>
+   </property>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSC3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSC4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP8</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG ON SP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG OFF SP</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_10">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC05-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_10">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC3:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC3:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_11">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC3:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_11">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC05-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_11">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC3:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_12">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC3:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_12">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC06-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_12">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC3:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_13">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC4:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_13">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC07-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_13">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC4:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_14">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC4:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_14">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC07-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_14">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC4:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_15">
+    <property name="geometry">
+     <rect>
+      <x>187</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC4:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_15">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC08-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_15">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC4:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_8">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>10</y>
+     <width>460</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string>Q3</string>
+   </property>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSC5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP9</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSC6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP11</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP12</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG ON SP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG OFF SP</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_16">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC09-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_16">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC5:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_16">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC5:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_17">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC5:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_17">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC09-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_17">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC5:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_18">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC5:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_18">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC10-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_18">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC5:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_19">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC6:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_19">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC11-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_19">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC6:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_20">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC6:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_20">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC11-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_20">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC6:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_21">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC6:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_21">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC12-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_21">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC6:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_9">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>203</y>
+     <width>460</width>
+     <height>190</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string>Q4</string>
+   </property>
+   <widget class="QLabel" name="label_44">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSC7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP13</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP14</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSC8</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP15</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIP16</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_52">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG ON SP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_53">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG OFF SP</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_28">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC13-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_28">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC7:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_28">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC7:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_29">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC7:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_29">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC13-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_29">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC7:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_30">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC7:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_30">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC14-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_30">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>80</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC7:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_31">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_31">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC15-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_31">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>120</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_32">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_32">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC15-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_32">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>140</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_33">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>160</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_33">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>160</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC16-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_33">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>160</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_34">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOnSetpoint4</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_34">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-VA-GC8:getOffSetpoint4</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_34">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>100</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC14-VA-IMG-SRM:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_54">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DIAG</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_10">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>410</y>
+     <width>460</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string>TL2</string>
+   </property>
+   <widget class="QLabel" name="label_55">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TL2 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_56">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TL2 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_61">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_63">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG ON SP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_64">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG OFF SP</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_35">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-IMG1:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_35">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-GC1:getOnSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_35">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-GC1:getOffSetpoint1</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_36">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-GC1:getOnSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_36">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-IMG2:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_36">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>60</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-GC1:getOffSetpoint2</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>450</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+   </property>
+   <property name="title">
+    <string>Microtron</string>
+   </property>
+   <widget class="QLabel" name="label_57">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_65">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_67">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG ON SP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_68">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG OFF SP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QELabel" name="pressureLSS1_37">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MI-VA-IMG:getPressure</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="onspLSS1_37">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-GC1:getOnSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="offspLSS1_37">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>TL2-VA-GC1:getOffSetpoint3</string>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QE::Scientific</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

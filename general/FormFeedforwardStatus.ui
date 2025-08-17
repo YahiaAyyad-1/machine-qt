@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormFeedforwardStatus</class>
+ <widget class="QMainWindow" name="FormFeedforwardStatus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Feedforward Status</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QEPlot" name="pltHeseb">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>200</y>
+      <width>700</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>HESEB:FF:HeartBeat</string>
+    </property>
+    <property name="variable2" stdset="0">
+     <string/>
+    </property>
+    <property name="traceStyle1">
+     <enum>QEPlot::Steps</enum>
+    </property>
+    <property name="traceStyle2">
+     <enum>QEPlot::Lines</enum>
+    </property>
+    <property name="axisEnableX">
+     <bool>false</bool>
+    </property>
+    <property name="axisEnableY">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>HESEB Feedforward</string>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltBeats">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>380</y>
+      <width>700</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>BEATS:FF:HeartBeat</string>
+    </property>
+    <property name="variable2" stdset="0">
+     <string/>
+    </property>
+    <property name="traceStyle1">
+     <enum>QEPlot::Steps</enum>
+    </property>
+    <property name="traceStyle2">
+     <enum>QEPlot::Lines</enum>
+    </property>
+    <property name="axisEnableX">
+     <bool>false</bool>
+    </property>
+    <property name="axisEnableY">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>BEATS Feedforward</string>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltMs">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>20</y>
+      <width>700</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>MS:FF:HeartBeat</string>
+    </property>
+    <property name="variable2" stdset="0">
+     <string/>
+    </property>
+    <property name="traceStyle1">
+     <enum>QEPlot::Steps</enum>
+    </property>
+    <property name="traceStyle2">
+     <enum>QEPlot::Lines</enum>
+    </property>
+    <property name="yMin">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="autoScale">
+     <bool>true</bool>
+    </property>
+    <property name="axisEnableX">
+     <bool>false</bool>
+    </property>
+    <property name="axisEnableY">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>MS Feedforward</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>794</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>822</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QEPushButton" name="startMsFFT">
+    <property name="geometry">
+     <rect>
+      <x>728</x>
+      <y>70</y>
+      <width>76</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="program">
+     <string>/home/control/qt-client/scripts/python_manager.py -start MS-FeedforwardCorrection</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="stopMsFFT">
+    <property name="geometry">
+     <rect>
+      <x>728</x>
+      <y>110</y>
+      <width>76</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+    <property name="program">
+     <string>/home/control/qt-client/scripts/python_manager.py -stop MS-FeedforwardCorrection</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="stopHesebFFT">
+    <property name="geometry">
+     <rect>
+      <x>728</x>
+      <y>290</y>
+      <width>76</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+    <property name="program">
+     <string>/home/control/qt-client/scripts/python_manager.py -stop HESEB-FeedforwardCorrection</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="startHesebFFT">
+    <property name="geometry">
+     <rect>
+      <x>728</x>
+      <y>250</y>
+      <width>76</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="program">
+     <string>/home/control/qt-client/scripts/python_manager.py -start HESEB-FeedforwardCorrection</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="stopBeatsFFT">
+    <property name="geometry">
+     <rect>
+      <x>729</x>
+      <y>472</y>
+      <width>76</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+    <property name="program">
+     <string>/home/control/qt-client/scripts/python_manager.py -stop BEATS-FeedforwardCorrection</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="startBeatsFFT">
+    <property name="geometry">
+     <rect>
+      <x>729</x>
+      <y>432</y>
+      <width>76</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="program">
+     <string>/home/control/qt-client/scripts/python_manager.py -start BEATS-FeedforwardCorrection</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPlot</class>
+   <extends>QEFrame</extends>
+   <header>QEPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

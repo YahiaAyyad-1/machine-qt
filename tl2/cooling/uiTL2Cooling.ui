@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiTL2Cooling</class>
+ <widget class="QMainWindow" name="uiTL2Cooling">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>191</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TL2 Cooling</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>40</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Flow</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Temp.</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="GBCooling">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>170</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>TL2</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="lblHBM1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HBM1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblVBM1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>VBM1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTHS">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>THS</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblHBM2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HBM2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblVMB2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>VBM2</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM1Temp">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-VBM1:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=3,ch=X</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledHBM2Temp">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-HBM2:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=1,ch=Y</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM1Flow">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-VBM1:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=1,ch=X</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledHBM1Flow">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-HBM1:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=1,ch=X</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledHBM2Flow">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-HBM2:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=2,ch=X</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledTSHTemp">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-THS:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=2,ch=Y</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledHBM1Temp">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-HBM1:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=3,ch=X</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Temp">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-VBM2:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=1,ch=Y</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Flow">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>100</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-VBM2:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledTSHFlow">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-THS:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=2,ch=X</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Temp_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-Q3:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=1,ch=Y</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblVMB2_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Q3 &amp; Q4</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Flow_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>120</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB1-Q3:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Temp_3">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-Q5:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblVMB2_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Q5</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Flow_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>140</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-Q5:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Temp_4">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-Q7:isTemperatureInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>corrector=1,ch=Y</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblVMB2_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Q7</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledVBM2Flow_4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>160</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="ledType">
+      <enum>QSimpleShape::Error</enum>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-CO-SB2-Q7:isFlowInterlock</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>170</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QEPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>60</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnReset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>60</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,5161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiSR_RF</class>
+ <widget class="QMainWindow" name="uiSR_RF">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1650</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Storage Ring RF</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="GBPlant4">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>251</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Plant 4</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QGroupBox" name="GBPowerP4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>230</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Power Amplifier</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_74">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DC Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_81">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rectifiers Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_4">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA4:calculateDcEfficiency</string>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_10">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA4-DIS00:getUpperForwardPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_14">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA4-DIS00:getUpperReflectedPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_18">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA$(ssa):getAverageVoltage</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=4</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=4</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_8">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RF</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStartPowerP1_4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerONSequence</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=4</string>
+      </property>
+      <property name="altReadbackVariable" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStopPowerP1_4">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerOFF</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mains</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExpert4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>83</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="GBCavityP4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>230</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Cavity</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_44">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.083</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblGuagePressureP4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC$(cell)-VA-IMG$(ch):getPressure</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>cell=03,ch=4</string>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::LocalEnumeration</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblTempP4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-CR$(ch):getCavTemp</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ch=4</string>
+      </property>
+      <property name="arrayIndex">
+       <number>0</number>
+      </property>
+      <property name="allowDrop">
+       <bool>false</bool>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QE::User</enum>
+      </property>
+      <property name="precision">
+       <number>1</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>true</bool>
+      </property>
+      <property name="leadingZero">
+       <bool>true</bool>
+      </property>
+      <property name="trailingZeros">
+       <bool>true</bool>
+      </property>
+      <property name="addUnits">
+       <bool>true</bool>
+      </property>
+      <property name="localEnumeration">
+       <string/>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::Default</enum>
+      </property>
+      <property name="radix">
+       <number>10</number>
+      </property>
+      <property name="separator" stdset="0">
+       <enum>QE::NoSeparator</enum>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QE::Fixed</enum>
+      </property>
+      <property name="arrayAction" stdset="0">
+       <enum>QE::Ascii</enum>
+      </property>
+      <property name="updateOption" stdset="0">
+       <enum>QELabel::Text</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_46">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guage Pressure</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Temprature</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_49">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase Error</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseP4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):PHASE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblVoltageP4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>100</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_76">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_77">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Detuning</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_11">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):FWD$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>2.128 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_12">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):REV$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.224 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_13">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):C$(ch)T1:AIN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>-10.000 V</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBPlant1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>251</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Plant 1</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QGroupBox" name="GBPowerP1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>231</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Power Amplifier</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DC Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_78">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rectifiers Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA1:calculateDcEfficiency</string>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_7">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA1-DIS00:getUpperForwardPower</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_11">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA1-DIS00:getUpperReflectedPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_15">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA$(ssa):getAverageVoltage</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=1</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=1</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RF</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStartPowerP1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerONSequence</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=1</string>
+      </property>
+      <property name="altReadbackVariable" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStopPowerP1">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerOFF</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mains</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExpert1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>83</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="GBCavityP1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>231</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Cavity</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.234</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblGuagePressureP1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC$(cell)-VA-IMG$(ch):getPressure</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>cell=03,ch=1</string>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::LocalEnumeration</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblTempP1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-CR$(ch):getCavTemp</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ch=1</string>
+      </property>
+      <property name="arrayIndex">
+       <number>0</number>
+      </property>
+      <property name="allowDrop">
+       <bool>false</bool>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QE::User</enum>
+      </property>
+      <property name="precision">
+       <number>1</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>true</bool>
+      </property>
+      <property name="leadingZero">
+       <bool>true</bool>
+      </property>
+      <property name="trailingZeros">
+       <bool>true</bool>
+      </property>
+      <property name="addUnits">
+       <bool>true</bool>
+      </property>
+      <property name="localEnumeration">
+       <string/>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::Default</enum>
+      </property>
+      <property name="radix">
+       <number>10</number>
+      </property>
+      <property name="separator" stdset="0">
+       <enum>QE::NoSeparator</enum>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QE::Fixed</enum>
+      </property>
+      <property name="arrayAction" stdset="0">
+       <enum>QE::Ascii</enum>
+      </property>
+      <property name="updateOption" stdset="0">
+       <enum>QELabel::Text</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guage Pressure</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Temprature</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>100</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase Error</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseP1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):PHASE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblVoltageP1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>100</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_55">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Detuning</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):FWD$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>2.063 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):REV$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.277 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):C$(ch)T1:AIN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>9.995 V</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>660</y>
+      <width>1631</width>
+      <height>58</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>1522</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="GBPlant2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>250</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Plant 2</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QGroupBox" name="GBPowerP2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>230</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Power Amplifier</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_61">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DC Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_79">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rectifiers Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA2:calculateDcEfficiency</string>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_8">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA2-DIS00:getUpperForwardPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_12">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA2-DIS00:getUpperReflectedPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_16">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA$(ssa):getAverageVoltage</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=2</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=2</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RF</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStartPowerP1_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerONSequence</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=2</string>
+      </property>
+      <property name="altReadbackVariable" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStopPowerP1_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerOFF</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mains</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExpert2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>83</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="GBCavityP2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>230</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Cavity</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.319</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblGuagePressureP2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC$(cell)-VA-IMG$(ch):getPressure</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>cell=03,ch=2</string>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::LocalEnumeration</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblTempP2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-CR$(ch):getCavTemp</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ch=2</string>
+      </property>
+      <property name="arrayIndex">
+       <number>0</number>
+      </property>
+      <property name="allowDrop">
+       <bool>false</bool>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QE::User</enum>
+      </property>
+      <property name="precision">
+       <number>1</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>true</bool>
+      </property>
+      <property name="leadingZero">
+       <bool>true</bool>
+      </property>
+      <property name="trailingZeros">
+       <bool>true</bool>
+      </property>
+      <property name="addUnits">
+       <bool>true</bool>
+      </property>
+      <property name="localEnumeration">
+       <string/>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::Default</enum>
+      </property>
+      <property name="radix">
+       <number>10</number>
+      </property>
+      <property name="separator" stdset="0">
+       <enum>QE::NoSeparator</enum>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QE::Fixed</enum>
+      </property>
+      <property name="arrayAction" stdset="0">
+       <enum>QE::Ascii</enum>
+      </property>
+      <property name="updateOption" stdset="0">
+       <enum>QELabel::Text</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guage Pressure</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Temprature</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase Error</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseP2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):PHASE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblVoltageP2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_5">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):REV$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.455 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_6">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):FWD$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>2.193 kW</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_57">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>100</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_58">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Detuning</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_7">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):C$(ch)T1:AIN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=1,ch=2</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>1.786 V</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBPlant3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>251</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Plant 3</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QGroupBox" name="GBPowerP3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>230</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Power Amplifier</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DC Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_80">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rectifiers Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>60</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA3:calculateDcEfficiency</string>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_9">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA3-DIS00:getUpperForwardPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_13">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA3-DIS00:getUpperReflectedPower</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_17">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-SSA$(ssa):getAverageVoltage</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=3</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=3</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_6">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):getStatus.B1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>150</y>
+        <width>21</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RF</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStartPowerP1_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerONSequence</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=3</string>
+      </property>
+      <property name="altReadbackVariable" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnStopPowerP1_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>150</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC03-RF-SSA$(ssa):setACBreakerOFF</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ssa=3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mains</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExpert3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>83</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="GBCavityP3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>230</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string>Cavity</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Voltage</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>-0.151</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblGuagePressureP3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SRC$(cell)-VA-IMG$(ch):getPressure</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>cell=03,ch=3</string>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::LocalEnumeration</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblTempP3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>SR-RF-CR$(ch):getCavTemp</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>ch=3</string>
+      </property>
+      <property name="arrayIndex">
+       <number>0</number>
+      </property>
+      <property name="allowDrop">
+       <bool>false</bool>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QE::User</enum>
+      </property>
+      <property name="precision">
+       <number>1</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>true</bool>
+      </property>
+      <property name="leadingZero">
+       <bool>true</bool>
+      </property>
+      <property name="trailingZeros">
+       <bool>true</bool>
+      </property>
+      <property name="addUnits">
+       <bool>true</bool>
+      </property>
+      <property name="localEnumeration">
+       <string/>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QE::Default</enum>
+      </property>
+      <property name="radix">
+       <number>10</number>
+      </property>
+      <property name="separator" stdset="0">
+       <enum>QE::NoSeparator</enum>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QE::Fixed</enum>
+      </property>
+      <property name="arrayAction" stdset="0">
+       <enum>QE::Ascii</enum>
+      </property>
+      <property name="updateOption" stdset="0">
+       <enum>QELabel::Text</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guage Pressure</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Temprature</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>90</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Phase Error</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseP3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):PHASE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblVoltageP3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):VC$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_68">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Detuning</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_69">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reflected Power</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_70">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>100</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward Power</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_8">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):REV$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>0.171 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_9">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):FWD$(ch):MAG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>2.360 kW</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="lblPhaseErrorP1_10">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>LLE$(lle):C$(ch)T1:AIN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>lle=2,ch=1</string>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>-2.511 V</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_5">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCR3Flow">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>500</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CR3 Flow</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledCR3Flow">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CR3:isFlowInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledIMG4">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG4-REL2:isInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledPSS">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="flash0" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="flash1" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-PSS-PLC:isRfInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>3</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_12">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW2:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledIMG3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG3-REL2:isInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIMG3">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IMG3</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledLLE2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>600</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>LLE2:BRD1:INTERLOCK</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch8">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW8:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledLLE1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>580</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>LLE1:BRD1:INTERLOCK</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>555</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>RF Switch</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch5">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW5:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledIMG2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG2-REL2:isInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledIMG1">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC03-VA-IMG1-REL2:isInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIMG1">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IMG1</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>601</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIMG2">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IMG2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>575</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>LLE 1</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledCR2Flow">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CR2:isFlowInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIMG4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>IMG4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCR2Flow">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>500</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CR2 Flow</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMPS">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>MPS</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_9">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch7">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW7:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>580</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowRight</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCR1Flow">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>500</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CR1 Flow</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_6">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledCR4Flow">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CR4:isFlowInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledCR1Flow">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CR1:isFlowInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW1:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch6">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW6:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch3">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW3:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_10">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledMPS">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>520</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-MPS:isInterlock</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>500</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CR4 Flow</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_7">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledRFSwitch4">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>560</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-RFSW4:isenabled</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="qsimpleshape_8">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>520</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::arrowLeft</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>595</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>LLE 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPSS">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>PSS</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="GBLLEP1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>521</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>     LLE</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QEPushButton" name="btnResetP1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>20</y>
+       <width>160</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset Interlock</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>LLE$(lle):ILOCK:RESET</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>lle=1</string>
+     </property>
+     <property name="altReadbackVariable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnExpertLLEP1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>190</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Expert Panel</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="program">
+      <string>lle1-new</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledLLEP1">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>3</y>
+       <width>14</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>LLE$(lle):BRD$(board):INTERLOCK</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>lle=1,board=1</string>
+     </property>
+     <property name="edgeVariable" stdset="0">
+      <string/>
+     </property>
+     <property name="edgeAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="GBLLEP1_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>440</y>
+      <width>521</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>     LLE</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QEPushButton" name="btnResetP1_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>20</y>
+       <width>160</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset Interlock</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>LLE$(lle):ILOCK:RESET</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>lle=2</string>
+     </property>
+     <property name="altReadbackVariable" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnExpertLLEP1_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>190</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Expert Panel</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="program">
+      <string>lle2-new</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="ledLLEP1_2">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>3</y>
+       <width>14</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="shape">
+      <enum>QSimpleShape::circle</enum>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>60</red>
+       <green>20</green>
+       <blue>20</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>240</red>
+       <green>5</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>LLE$(lle):BRD$(board):INTERLOCK</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>lle=2,board=1</string>
+     </property>
+     <property name="edgeVariable" stdset="0">
+      <string/>
+     </property>
+     <property name="edgeAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QE::Never</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_3">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>500</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RF Ramp</string>
+    </property>
+    <property name="program">
+     <string>gnome-terminal --geometry 100x30 -x /home/control/client-x64/css/workspaces/development/CSS/common/RAMPING_testv1.py</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCooling">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>500</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cooling</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCoolingRacks">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>500</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cooling Racks</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMO">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>540</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Master Oscillator</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnInterlocks">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>540</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LLE Interlocks</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAmp">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>580</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MBF Amplifier</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFrontEnd">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>580</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BBB Frontend</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>540</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MBF-Y</string>
+    </property>
+    <property name="program">
+     <string>mbf-y</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>540</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MBF-X</string>
+    </property>
+    <property name="program">
+     <string>mbf-x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>580</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RF Diagnose</string>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>620</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-SW:setSource</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_4">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>630</y>
+      <width>40</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>On</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>auto_rf_voltage_ctrl</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_5">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>630</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>off</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>auto_rf_voltage_ctrl</string>
+    </property>
+    <property name="pressText">
+     <string>0</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>auto rf voltage ctrl</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="ledLLE2_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>630</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="shape">
+     <enum>QSimpleShape::circle</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>auto_rf_voltage_ctrl</string>
+    </property>
+    <property name="edgeAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>620</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Plunger motors</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>User</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Expert</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_6">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>620</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Spectrum Analyzer</string>
+    </property>
+    <property name="program">
+     <string>rdesktop -a 16 -b -g 1400x960 10.2.3.200 -u instrument -p sesame</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_19">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>320</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-DI:getBeamEnergy</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_20">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>320</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC01-DI-DCCT1:getDcctCurrent</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>320</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Energy</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_21">
+    <property name="geometry">
+     <rect>
+      <x>1570</x>
+      <y>320</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-DI:getBeamLifetime</string>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>320</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_43">
+    <property name="geometry">
+     <rect>
+      <x>1490</x>
+      <y>320</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lifetime</string>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="qeplot_2">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>40</y>
+      <width>550</width>
+      <height>260</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="autoScale">
+     <bool>true</bool>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>SRC01-DI-DCCT1:getDcctCurrent</string>
+    </property>
+    <property name="axisEnableX">
+     <bool>false</bool>
+    </property>
+    <property name="axisEnableY">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorY">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorX">
+     <bool>false</bool>
+    </property>
+    <property name="gridEnableMinorY">
+     <bool>false</bool>
+    </property>
+    <property name="yUnit">
+     <string>mA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_111">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>10</y>
+      <width>151</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Storage-Ring DCCT</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPhaseErrorP1_14">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>410</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>lle=1,ch=1</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0.234</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>380</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cavity 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPhaseErrorP2_2">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>410</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>lle=1,ch=2</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0.319</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>380</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cavity 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPhaseErrorP4_2">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>410</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>lle=2,ch=2</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>0.083</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_51">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>380</y>
+      <width>70</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cavity 4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_52">
+    <property name="geometry">
+     <rect>
+      <x>1450</x>
+      <y>380</y>
+      <width>70</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cavity 3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPhaseErrorP3_2">
+    <property name="geometry">
+     <rect>
+      <x>1450</x>
+      <y>410</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>LLE$(lle):TUNER:C$(ch):LOOP:ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>lle=2,ch=1</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>-0.151</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_60">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>410</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Phases Error</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_62">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>450</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Set Voltage</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="qenumericedit">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>450</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CAV1:setVoltage</string>
+    </property>
+    <property name="autoScale">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>430.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="qenumericedit_2">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>450</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CAV2:setVoltage</string>
+    </property>
+    <property name="autoScale">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>430.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="qenumericedit_3">
+    <property name="geometry">
+     <rect>
+      <x>1450</x>
+      <y>450</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CAV3:setVoltage</string>
+    </property>
+    <property name="autoScale">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>430.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="qenumericedit_4">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>450</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CAV4:setVoltage</string>
+    </property>
+    <property name="autoScale">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>430.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_63">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>490</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Set Cavities Voltage</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="qenumericedit_5">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>490</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-CAV:setVoltage</string>
+    </property>
+    <property name="autoScale">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>430.000000000000000</double>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QENumericEdit</class>
+   <extends>QWidget</extends>
+   <header>QENumericEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPlot</class>
+   <extends>QEFrame</extends>
+   <header>QEPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

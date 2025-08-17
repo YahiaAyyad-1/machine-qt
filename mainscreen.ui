@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainScreen</class>
+ <widget class="QMainWindow" name="MainScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>745</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SESAME Control System</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>723</width>
+         <height>663</height>
+        </rect>
+       </property>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>260</y>
+          <width>171</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Timing System</string>
+        </property>
+        <widget class="QPushButton" name="btnEVG">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Event Generator</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnEVR1">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Event Receiver 1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnEVR2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Event Receiver 2</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>352</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Microtron Control System</string>
+        </property>
+        <widget class="QPushButton" name="btnMicrotronMotors">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Actuating Motors</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnMIOperation">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Operation</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnMicrotronAnalog">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>60</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Temperatures</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnMicrotronPS">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Power Supplies</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>110</y>
+          <width>350</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Transfer Line 2 Control System</string>
+        </property>
+        <widget class="QPushButton" name="btnTL2Cooling">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cooling</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnTL2PowerSupplies">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>40</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Power Supplies</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnTL2Diagnostics">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>80</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Diagnostics</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnTL2Vacuum">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vacuum</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>110</y>
+          <width>352</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Booster Control System</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>100</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cooling</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Power Supplies</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>60</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Diagnostics</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vacuum</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Radio Frequency</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>410</y>
+          <width>352</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Insertion Devices</string>
+        </property>
+        <widget class="QPushButton" name="btnD09W">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>310</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>D09 Wiggler Main</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnD11U">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>100</y>
+           <width>310</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>D11 Undulator Main</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnD10W">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>310</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>D10 Wiggler Main</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="titleGroupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>560</y>
+          <width>720</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="btnClose">
+         <property name="geometry">
+          <rect>
+           <x>620</x>
+           <y>40</y>
+           <width>90</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnMPS">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>60</y>
+           <width>180</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>MPS - PSS</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnDCCT">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>20</y>
+           <width>60</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>DCCT</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnProfiles">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>20</y>
+           <width>130</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Profiles</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnManager">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>150</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Machine Manager</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnInjection">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>20</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Injection GUI</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>60</y>
+           <width>100</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>FA-Archiver</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnMonitors">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>150</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Radiation Monitors</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnMessage">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>60</y>
+           <width>130</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Operator Message</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnShuttersSafety">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>20</y>
+           <width>111</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>BL Shutters</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>0</y>
+          <width>350</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Transfer Line 1 Control System</string>
+        </property>
+        <widget class="QPushButton" name="btnTL1Power">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>40</y>
+           <width>152</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Power Supplies</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnTL1Vacuum">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>151</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vacuum</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>260</y>
+          <width>170</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Tools</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_25">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>151</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Alarm Handler</string>
+         </property>
+        </widget>
+        <widget class="QEPushButton" name="qepushbutton_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>150</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Archiver (Web)</string>
+         </property>
+         <property name="program">
+          <string>firefox http://10.1.100.9:17665/mgmt/ui/index.html</string>
+         </property>
+        </widget>
+        <widget class="QEPushButton" name="qepushbutton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>150</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Archiver</string>
+         </property>
+         <property name="program">
+          <string>aa-gui</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>260</y>
+          <width>352</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+        </property>
+        <property name="title">
+         <string>Storage Ring Control System</string>
+        </property>
+        <widget class="QPushButton" name="btnSRCooling">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>100</y>
+           <width>151</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cooling</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnSRRF">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Radio Frequency</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnSRVacuum">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>20</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vacuum</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnSRDiagnostics">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>60</y>
+           <width>161</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Diagnostics</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnSRPS">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>60</y>
+           <width>162</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Power Supplies</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_91">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>420</y>
+          <width>190</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Machine Mode</string>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>450</y>
+          <width>350</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="variable" stdset="0">
+         <string>Machine:Status</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comMachineStatus">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>490</y>
+          <width>351</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Disabled</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Machine Development</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Injection</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>User Beam</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shutdown</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Downtime</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Free Mode</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beamline Development</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Machine Start-Up</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionPV_Profiles">
+   <property name="text">
+    <string>PV Profiles</string>
+   </property>
+  </action>
+  <action name="actionWindows_Profiles">
+   <property name="text">
+    <string>Windows Profiles</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

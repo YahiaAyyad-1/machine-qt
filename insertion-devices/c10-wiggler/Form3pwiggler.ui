@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form3pwiggler</class>
+ <widget class="QMainWindow" name="Form3pwiggler">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ID10 Wiggler</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>911</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>909</width>
+       <height>519</height>
+      </rect>
+     </property>
+     <widget class="QESimpleShape" name="qesimpleshape">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>140</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>0</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Injection-A-Switch</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>20</red>
+        <green>60</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Brake-A-On</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Beam Direction</string>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>40</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:setGap</string>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="titleGroupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>239</y>
+        <width>531</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+      </property>
+      <property name="title">
+       <string>Coils Power Supplies</string>
+      </property>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Voltage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>20</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Current</string>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_14">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>90</y>
+         <width>70</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(group):Current</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>group=ID10-PS-X2</string>
+       </property>
+      </widget>
+      <widget class="QEPushButton" name="qepushbutton_17">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>110</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-Y2:Enable</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_52">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>110</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="ledType">
+        <enum>QSimpleShape::Error</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-Y2:GenericFault.RVAL</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_55">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>110</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-Y2:SupplyOn</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDetailsX2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>90</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Details</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDetailsY2">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>110</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Details</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>90</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2-X</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_31">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(group):OutputVoltage</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>group=ID10-PS-Y2</string>
+       </property>
+       <property name="localEnumeration">
+        <string>0=ON,1=Fault</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_32">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(group):OutputCurrent</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>group=ID10-PS-X2</string>
+       </property>
+       <property name="localEnumeration">
+        <string>0=ON,1=Fault</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_53">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>90</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-X2:Enable</string>
+       </property>
+      </widget>
+      <widget class="QEPushButton" name="qepushbutton_18">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>110</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-Y2:Enable</string>
+       </property>
+       <property name="clickText">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QEPushButton" name="qepushbutton_19">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>90</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-X2:Enable</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_30">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>90</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(group):OutputVoltage</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>group=ID10-PS-X2</string>
+       </property>
+       <property name="localEnumeration">
+        <string>0=ON,1=Fault</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_33">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>110</y>
+         <width>90</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(group):CurrentRBV</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>group=ID10-PS-Y2</string>
+       </property>
+       <property name="localEnumeration">
+        <string>0=ON,1=Fault</string>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_13">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>110</y>
+         <width>70</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(group):Setpoint</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>group=ID10-PS-Y2</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>110</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2-Y</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_54">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>90</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="ledType">
+        <enum>QSimpleShape::Error</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-X2:StatusLSB.B1</string>
+       </property>
+      </widget>
+      <widget class="QEPushButton" name="qepushbutton_20">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>90</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>ID10-PS-X2:Enable</string>
+       </property>
+       <property name="clickText">
+        <string>0</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Brake </string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:A.RBV</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Motor A</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="titleGroupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>110</y>
+        <width>531</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+      </property>
+      <property name="title">
+       <string>Alarms</string>
+      </property>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Emergency</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_18">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>60</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="ledType">
+        <enum>QSimpleShape::Status</enum>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>240</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:Axis-A-Kill-Plus</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_19">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>240</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:Axis-A-Kill-Minus</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_20">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>240</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:Axis-B-Kill-Minus</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_21">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>240</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:Axis-B-Kill-Plus</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string/>
+       </property>
+      </widget>
+      <widget class="Line" name="line_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>411</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Kill switches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>20</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Flow switches</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_31">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>20</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="ledType">
+        <enum>QSimpleShape::Error</enum>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>240</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="colour1" stdset="0">
+        <color>
+         <red>5</red>
+         <green>240</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:FLS1</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_32">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>20</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="ledType">
+        <enum>QSimpleShape::Error</enum>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>240</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="colour1" stdset="0">
+        <color>
+         <red>5</red>
+         <green>240</green>
+         <blue>5</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:FLS2</string>
+       </property>
+      </widget>
+      <widget class="QSimpleShape" name="lefEmergency1">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>20</red>
+         <green>250</green>
+         <blue>20</blue>
+        </color>
+       </property>
+       <property name="colour1" stdset="0">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="QSimpleShape" name="lefEmergency2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>20</red>
+         <green>250</green>
+         <blue>20</blue>
+        </color>
+       </property>
+       <property name="colour1" stdset="0">
+        <color>
+         <red>250</red>
+         <green>5</green>
+         <blue>5</blue>
+        </color>
+       </property>
+      </widget>
+      <widget class="QEPushButton" name="qepushbutton_21">
+       <property name="geometry">
+        <rect>
+         <x>445</x>
+         <y>40</y>
+         <width>73</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>reset</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>BEATS-WIGGLER:reset</string>
+       </property>
+       <property name="clickText">
+        <string>1</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QELabel" name="qelabel">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>210</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:I.RBV</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>40</y>
+        <width>130</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Gap Setpoint</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>340</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:B.RBV</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>20</red>
+        <green>60</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Brake-B-On</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Motor B</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>140</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Injection Limit</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="titleGroupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>450</y>
+        <width>881</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="btnClose">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>20</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnMotion">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>120</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Motion Control</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Brake</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="qsimpleshape_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::arrowLeft</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>430</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Motors Enabled</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_30">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>190</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Axis-A-Kill-Minus</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_4">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>80</y>
+        <width>120</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:I.VELO</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>80</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>311</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../resources.qrc">:/images/c10.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_33">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>220</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Axis-B-Kill-Minus</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_34">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>270</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Axis-B-Kill-Plus</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_35">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Axis-A-Kill-Plus</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnStop">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>60</y>
+        <width>50</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_29">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>310</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):CurrentRBV</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=ID10-PS-Y1</string>
+      </property>
+      <property name="localEnumeration">
+       <string>0=ON,1=Fault</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_37">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>310</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-Y1:GenericFault.RVAL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>375</x>
+        <y>290</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1-X</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_22">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>290</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):OutputVoltage</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=ID10-PS-X1</string>
+      </property>
+      <property name="localEnumeration">
+       <string>0=ON,1=Fault</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDetailsY1">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>310</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit_12">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>310</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):Setpoint</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=ID10-PS-Y1</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_15">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>310</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ON</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-Y1:Enable</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_26">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>290</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-X1:Enable</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_36">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>290</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-X1:StatusLSB.B1</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_28">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>310</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):OutputVoltage</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=ID10-PS-Y1</string>
+      </property>
+      <property name="localEnumeration">
+       <string>0=ON,1=Fault</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDetailsX1">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>290</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_14">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>310</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OFF</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-Y1:Enable</string>
+      </property>
+      <property name="clickText">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_25">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>310</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-Y1:SupplyOn</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_13">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>290</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ON</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-X1:Enable</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_27">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>290</y>
+        <width>90</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):OutputCurrent</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=ID10-PS-X1</string>
+      </property>
+      <property name="localEnumeration">
+       <string>0=ON,1=Fault</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>375</x>
+        <y>310</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1-Y</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_16">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>290</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OFF</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10-PS-X1:Enable</string>
+      </property>
+      <property name="clickText">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit_11">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>290</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(group):Current</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>group=ID10-PS-X1</string>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="qesimpleshape_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>280</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="ledType">
+       <enum>QSimpleShape::Error</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>0</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>240</red>
+        <green>5</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>BEATS-WIGGLER:Injection-B-Switch</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>270</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Injection 
+Limit</string>
+      </property>
+     </widget>
+     <widget class="QSimpleShape" name="ledMotors">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>430</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>204</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMov">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>10</y>
+        <width>50</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:Status</string>
+      </property>
+      <property name="pressText">
+       <string>RUNNING</string>
+      </property>
+      <property name="clickText">
+       <string>RUNNING</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>410</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Message:</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_5">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>410</y>
+        <width>220</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:getMessages</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>410</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wiggler Status:</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_6">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>410</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ID10R01-MC1:Status</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>40</y>
+        <width>240</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Injection Gap: 100 mm</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>70</y>
+        <width>180</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min Gap: 11.15 mm</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_46">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>11</y>
+        <width>191</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max Gap: 210 mm</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>qesimpleshape</zorder>
+     <zorder>qesimpleshape_4</zorder>
+     <zorder>label_11</zorder>
+     <zorder>qelineedit</zorder>
+     <zorder>titleGroupBox_3</zorder>
+     <zorder>label_8</zorder>
+     <zorder>qelabel_2</zorder>
+     <zorder>label_7</zorder>
+     <zorder>titleGroupBox_4</zorder>
+     <zorder>qelabel</zorder>
+     <zorder>label_13</zorder>
+     <zorder>qelabel_3</zorder>
+     <zorder>qesimpleshape_5</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_4</zorder>
+     <zorder>titleGroupBox_2</zorder>
+     <zorder>label_10</zorder>
+     <zorder>qsimpleshape_2</zorder>
+     <zorder>label_14</zorder>
+     <zorder>qesimpleshape_30</zorder>
+     <zorder>qelabel_4</zorder>
+     <zorder>label_43</zorder>
+     <zorder>qesimpleshape_33</zorder>
+     <zorder>qesimpleshape_34</zorder>
+     <zorder>qesimpleshape_35</zorder>
+     <zorder>btnStop</zorder>
+     <zorder>qelabel_29</zorder>
+     <zorder>qesimpleshape_37</zorder>
+     <zorder>label_20</zorder>
+     <zorder>qelabel_22</zorder>
+     <zorder>btnDetailsY1</zorder>
+     <zorder>qelineedit_12</zorder>
+     <zorder>qepushbutton_15</zorder>
+     <zorder>qesimpleshape_26</zorder>
+     <zorder>qesimpleshape_36</zorder>
+     <zorder>qelabel_28</zorder>
+     <zorder>btnDetailsX1</zorder>
+     <zorder>qepushbutton_14</zorder>
+     <zorder>qesimpleshape_25</zorder>
+     <zorder>qepushbutton_13</zorder>
+     <zorder>qelabel_27</zorder>
+     <zorder>label_21</zorder>
+     <zorder>qepushbutton_16</zorder>
+     <zorder>qelineedit_11</zorder>
+     <zorder>qesimpleshape_2</zorder>
+     <zorder>label_5</zorder>
+     <zorder>ledMotors</zorder>
+     <zorder>btnMov</zorder>
+     <zorder>label_2</zorder>
+     <zorder>qelabel_5</zorder>
+     <zorder>label_3</zorder>
+     <zorder>qelabel_6</zorder>
+     <zorder>label_48</zorder>
+     <zorder>label_47</zorder>
+     <zorder>label_46</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

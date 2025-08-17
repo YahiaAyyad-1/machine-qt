@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormBLMChannels</class>
+ <widget class="QMainWindow" name="FormBLMChannels">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BLM Channels</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>950</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>20</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>950</width>
+      <height>490</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Raw ADC</string>
+     </attribute>
+     <widget class="QEPlotter" name="qeplotter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>930</width>
+        <height>430</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="toolBarIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="pvItemsIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="statusIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="axisEnableX">
+       <bool>true</bool>
+      </property>
+      <property name="DataVariableA" stdset="0">
+       <string>libera:signals:adc.A</string>
+      </property>
+      <property name="DataVariableB" stdset="0">
+       <string>libera:signals:adc.B</string>
+      </property>
+      <property name="DataVariableC" stdset="0">
+       <string>libera:signals:adc.C</string>
+      </property>
+      <property name="DataVariableD" stdset="0">
+       <string>libera:signals:adc.D</string>
+      </property>
+      <property name="SizeVariableX" stdset="0">
+       <string>2048</string>
+      </property>
+      <property name="SizeVariableA" stdset="0">
+       <string/>
+      </property>
+      <property name="SizeVariableB" stdset="0">
+       <string/>
+      </property>
+      <property name="SizeVariableC" stdset="0">
+       <string/>
+      </property>
+      <property name="SizeVariableD" stdset="0">
+       <string/>
+      </property>
+      <property name="AliasNameA" stdset="0">
+       <string>Channel A</string>
+      </property>
+      <property name="AliasNameB" stdset="0">
+       <string>Channel B</string>
+      </property>
+      <property name="AliasNameC" stdset="0">
+       <string>Channel C</string>
+      </property>
+      <property name="AliasNameD" stdset="0">
+       <string>Channel D</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Synth. ADC</string>
+     </attribute>
+     <widget class="QEPlotter" name="qeplotter_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>930</width>
+        <height>430</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="toolBarIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="pvItemsIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="statusIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="DataVariableA" stdset="0">
+       <string>libera:signals:adc_synth.A</string>
+      </property>
+      <property name="DataVariableB" stdset="0">
+       <string>libera:signals:adc_synth.B</string>
+      </property>
+      <property name="DataVariableC" stdset="0">
+       <string>libera:signals:adc_synth.C</string>
+      </property>
+      <property name="DataVariableD" stdset="0">
+       <string>libera:signals:adc_synth.D</string>
+      </property>
+      <property name="SizeVariableX" stdset="0">
+       <string>2048</string>
+      </property>
+      <property name="AliasNameA" stdset="0">
+       <string>Channel A</string>
+      </property>
+      <property name="AliasNameB" stdset="0">
+       <string>Channel B</string>
+      </property>
+      <property name="AliasNameC" stdset="0">
+       <string>Channel C</string>
+      </property>
+      <property name="AliasNameD" stdset="0">
+       <string>Channel D</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Integrated ADC</string>
+     </attribute>
+     <widget class="QEPlotter" name="qeplotter_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>930</width>
+        <height>430</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="toolBarIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="pvItemsIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="statusIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="DataVariableA" stdset="0">
+       <string>libera:signals:adc_integrated.A</string>
+      </property>
+      <property name="DataVariableB" stdset="0">
+       <string>libera:signals:adc_integrated.B</string>
+      </property>
+      <property name="DataVariableC" stdset="0">
+       <string>libera:signals:adc_integrated.C</string>
+      </property>
+      <property name="DataVariableD" stdset="0">
+       <string>libera:signals:adc_integrated.D</string>
+      </property>
+      <property name="SizeVariableA" stdset="0">
+       <string>16</string>
+      </property>
+      <property name="SizeVariableB" stdset="0">
+       <string>16</string>
+      </property>
+      <property name="SizeVariableC" stdset="0">
+       <string>16</string>
+      </property>
+      <property name="SizeVariableD" stdset="0">
+       <string>16</string>
+      </property>
+      <property name="AliasNameA" stdset="0">
+       <string>Channel A</string>
+      </property>
+      <property name="AliasNameB" stdset="0">
+       <string>Channel B</string>
+      </property>
+      <property name="AliasNameC" stdset="0">
+       <string>Channel C</string>
+      </property>
+      <property name="AliasNameD" stdset="0">
+       <string>Channel D</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Sum</string>
+     </attribute>
+     <widget class="QEPlotter" name="qeplotter_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>930</width>
+        <height>430</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="toolBarIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="pvItemsIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="statusIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="DataVariableA" stdset="0">
+       <string>libera:signals:sum.A</string>
+      </property>
+      <property name="DataVariableB" stdset="0">
+       <string>libera:signals:sum.B</string>
+      </property>
+      <property name="DataVariableC" stdset="0">
+       <string>libera:signals:sum.C</string>
+      </property>
+      <property name="DataVariableD" stdset="0">
+       <string>libera:signals:sum.D</string>
+      </property>
+      <property name="SizeVariableA" stdset="0">
+       <string>1024</string>
+      </property>
+      <property name="SizeVariableB" stdset="0">
+       <string>1024</string>
+      </property>
+      <property name="SizeVariableC" stdset="0">
+       <string>1024</string>
+      </property>
+      <property name="SizeVariableD" stdset="0">
+       <string>1024</string>
+      </property>
+      <property name="AliasNameA" stdset="0">
+       <string>Channel A</string>
+      </property>
+      <property name="AliasNameB" stdset="0">
+       <string>Channel B</string>
+      </property>
+      <property name="AliasNameC" stdset="0">
+       <string>Channel C</string>
+      </property>
+      <property name="AliasNameD" stdset="0">
+       <string>Channel D</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Average</string>
+     </attribute>
+     <widget class="QEPlotter" name="qeplotter_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>930</width>
+        <height>430</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="toolBarIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="pvItemsIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="statusIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="DataVariableA" stdset="0">
+       <string>libera:signals:average.A</string>
+      </property>
+      <property name="DataVariableB" stdset="0">
+       <string>libera:signals:average.B</string>
+      </property>
+      <property name="DataVariableC" stdset="0">
+       <string>libera:signals:average.C</string>
+      </property>
+      <property name="DataVariableD" stdset="0">
+       <string>libera:signals:average.D</string>
+      </property>
+      <property name="SizeVariableA" stdset="0">
+       <string>128</string>
+      </property>
+      <property name="SizeVariableB" stdset="0">
+       <string>128</string>
+      </property>
+      <property name="SizeVariableC" stdset="0">
+       <string>128</string>
+      </property>
+      <property name="SizeVariableD" stdset="0">
+       <string>128</string>
+      </property>
+      <property name="AliasNameA" stdset="0">
+       <string>Channel A</string>
+      </property>
+      <property name="AliasNameB" stdset="0">
+       <string>Channel B</string>
+      </property>
+      <property name="AliasNameC" stdset="0">
+       <string>Channel C</string>
+      </property>
+      <property name="AliasNameD" stdset="0">
+       <string>Channel D</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>SA Data</string>
+     </attribute>
+     <widget class="QEPlot" name="qeplot_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>931</width>
+        <height>432</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>libera:signals:sa.A</string>
+      </property>
+      <property name="variable2" stdset="0">
+       <string>libera:signals:sa.B</string>
+      </property>
+      <property name="variable3" stdset="0">
+       <string>libera:signals:sa.C</string>
+      </property>
+      <property name="variable4" stdset="0">
+       <string>libera:signals:sa.D</string>
+      </property>
+      <property name="traceLegend1">
+       <string>Channel 1</string>
+      </property>
+      <property name="traceLegend2">
+       <string>Channel 2</string>
+      </property>
+      <property name="traceLegend3">
+       <string>Channel 3</string>
+      </property>
+      <property name="traceLegend4">
+       <string>Channel 4</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Coincidence</string>
+     </attribute>
+     <widget class="QEPlot" name="qeplot">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>931</width>
+        <height>432</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>libera:signals:coincidence_counter.A</string>
+      </property>
+      <property name="variable2" stdset="0">
+       <string>libera:signals:coincidence_counter.B</string>
+      </property>
+      <property name="variable3" stdset="0">
+       <string>libera:signals:coincidence_counter.C</string>
+      </property>
+      <property name="variable4" stdset="0">
+       <string>libera:signals:coincidence_counter.D</string>
+      </property>
+      <property name="traceLegend1">
+       <string>Channel 1</string>
+      </property>
+      <property name="traceLegend2">
+       <string>Channel 2</string>
+      </property>
+      <property name="traceLegend3">
+       <string>Channel 3</string>
+      </property>
+      <property name="traceLegend4">
+       <string>Channel 4</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_9">
+     <attribute name="title">
+      <string>Counter 1</string>
+     </attribute>
+     <widget class="QEPlot" name="qeplot_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>931</width>
+        <height>432</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>libera:signals:counter.A1</string>
+      </property>
+      <property name="variable2" stdset="0">
+       <string>libera:signals:counter.B1</string>
+      </property>
+      <property name="variable3" stdset="0">
+       <string>libera:signals:counter.C1</string>
+      </property>
+      <property name="variable4" stdset="0">
+       <string>libera:signals:counter.D1</string>
+      </property>
+      <property name="traceLegend1">
+       <string>Channel 1</string>
+      </property>
+      <property name="traceLegend2">
+       <string>Channel 2</string>
+      </property>
+      <property name="traceLegend3">
+       <string>Channel 3</string>
+      </property>
+      <property name="traceLegend4">
+       <string>Channel 4</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>Counter 2</string>
+     </attribute>
+     <widget class="QEPlot" name="qeplot_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>931</width>
+        <height>432</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>libera:signals:counter.A2</string>
+      </property>
+      <property name="variable2" stdset="0">
+       <string>libera:signals:counter.B2</string>
+      </property>
+      <property name="variable3" stdset="0">
+       <string>libera:signals:counter.C2</string>
+      </property>
+      <property name="variable4" stdset="0">
+       <string>libera:signals:counter.D2</string>
+      </property>
+      <property name="traceLegend1">
+       <string>Channel 1</string>
+      </property>
+      <property name="traceLegend2">
+       <string>Channel 2</string>
+      </property>
+      <property name="traceLegend3">
+       <string>Channel 3</string>
+      </property>
+      <property name="traceLegend4">
+       <string>Channel 4</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPlot</class>
+   <extends>QEFrame</extends>
+   <header>QEPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPlotter</class>
+   <extends>QEFrame</extends>
+   <header>QEPlotter.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

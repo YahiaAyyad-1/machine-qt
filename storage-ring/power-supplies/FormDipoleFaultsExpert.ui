@@ -1,0 +1,2236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormDipoleFaultsExpert</class>
+ <widget class="QMainWindow" name="FormDipoleFaultsExpert">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SR Dipole Faults</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+  <widget class="QESimpleShape" name="qesimpleshape_35">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>402</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Warning</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B0</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>42</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B0</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>102</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_18">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>102</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B4ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_47">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B0</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>182</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B7</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>122</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_28">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>420</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B1ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_32">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>422</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Warning</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>790</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>20</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-PS-BM:setCommand</string>
+    </property>
+    <property name="clickText">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Soft Interlock</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-PS-BM:setCommand</string>
+    </property>
+    <property name="clickText">
+     <string>3</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>62</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_32">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>480</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B4ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>8</y>
+     <width>100</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PCO Faults 1</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B1ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_30">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>460</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B3ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_33">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_12">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>162</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B6</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_24">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>180</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B7</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>66</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Faults</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_34">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>462</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Warning</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_43">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B5</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_16">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>122</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>82</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>370</y>
+     <width>100</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Warnings</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B6ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_28">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>442</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Warning</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_23">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>120</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_22">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>182</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B7</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_46">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>308</y>
+     <width>100</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Status</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_45">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B6</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_11">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>242</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BA</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_20">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>42</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B0</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>162</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B6</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_21">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>142</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B5</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B3ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_9">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B8ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B7ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_17">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>82</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>202</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B8</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>142</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B5</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_42">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>480</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B7</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_31">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>400</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B0ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_19">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>80</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B5ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>90</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PCO Faults</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_13">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>160</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B6</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_15">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>60</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_29">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>482</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Warning</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_25">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>140</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B5</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_14">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>62</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults.B1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>222</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B9</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_26">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>100</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_10">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B9ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_44">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_29">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>440</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getWarnings.B2ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_41">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>420</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Status</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoStatus.B4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_11">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>240</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BAST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_27">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>40</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B0</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B2ST</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_48">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_49">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>260</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BB</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_50">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B8</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_51">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>240</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BA</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_52">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>220</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.B9</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_53">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>320</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_54">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>340</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_55">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>300</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getFaults.BD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-AC FUSES TRANSFORMER 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-AC FUSES TRANSFORMER 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>80</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-GRID MAIN CONTACT.SUPPLIER OFF</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-LOCAL FAST STOP </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-DC LINK DISCHARGE - 125F2/126F2 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>140</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-RACK POWER SUPPLY CONSENT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-EXTERNAL INTERLOCK #1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>180</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-CROWBAR CONSENT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>200</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-PRECHARGE TIMEOUT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>220</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R (CHOPPER) RUN CONSENT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>240</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R310 DC OUTPUT OVERVOLTAGE </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>260</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R310 COMUNICATION SPIA TIMEOUT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>280</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R310 COMUNICATION SPIB TIMEOUT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R CHOPPER IGBT DRIVER FAULT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>320</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R CHOPP.COMUNIC.SPIA TIMEOUT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>340</y>
+     <width>310</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R CHOPPER OUTPUT OVERCURRENT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>340</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-FAULT FL1 FROM FL2 TIMEOUT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_25">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>280</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-BRAKING MODULE 1 CONSENT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_26">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>320</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-AC AUXILIARY POWER SUPPLY FUSES</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_27">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>160</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R COMUNIC.CAN BUS TIMEOUT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>40</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-D920 CAN BUS ALARM - 202A1 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_29">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>100</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R310 CAN BUS ALARM - 300A1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_30">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>120</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R CAN BUS ALARM - 130A1 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>220</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R (CHOPPER) LOW DC LINK </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>140</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R310 COMUNIC.CAN BUS TIMEOUT </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_33">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>180</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-CROWBAR PROTECTION </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_34">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-DOORS OPEN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_35">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>240</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R16R (CHOPPER) HIGH DC LINK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_36">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>300</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-BRAKING MODULE 2 CONSENT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_37">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>60</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-D920 CAN BUS ALARM - 204A1 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_38">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>260</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-R310-VOLT.RIPPLE DETECTOR ALARM </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_39">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>80</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>PLC-D920 CAN BUS ALARM - 200A1 </string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_56">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>340</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.BF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_57">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>280</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.BC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_58">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>220</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B9</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_59">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>300</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.BD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_60">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>200</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.B8</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_61">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>240</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.BA</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_62">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>320</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.BE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QESimpleShape" name="qesimpleshape_63">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>260</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="ledType">
+    <enum>QSimpleShape::Error</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(group):getPcoFaults1.BB</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>group=SR-PS-BM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>Cooling</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>340</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>OFF</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_40">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>360</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>Standby</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_41">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>380</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>ON</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_42">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>400</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>Fault</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_43">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>420</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>Transition</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_44">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>Remote</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_45">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>460</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>Warning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_46">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>480</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>External</string>
+   </property>
+  </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

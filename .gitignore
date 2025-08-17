@@ -1,0 +1,16 @@
+Qt-Client.pro.user
+Qt-Client.pro.user*
+*.o
+moc_*
+moc*
+Debug/
+Release/
+Profile/
+Makefile*
+*.autosave
+ui_*
+.qmake.stash
+Qt-Client
+qrc_resources.cpp
+pid
+

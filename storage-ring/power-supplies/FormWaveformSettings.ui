@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormWaveformSettings</class>
+ <widget class="QMainWindow" name="FormWaveformSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1011</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SR PS Waveforms</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>991</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>20</y>
+       <width>85</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QEPlot" name="pltWaveform1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>240</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(group):getWaveform0</string>
+    </property>
+    <property name="yMax">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="title">
+     <string>Waveform 0</string>
+    </property>
+    <property name="timeSpan">
+     <number>32768</number>
+    </property>
+    <property name="tickRate">
+     <number>1024</number>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltWaveform2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>240</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(group):getWaveform1</string>
+    </property>
+    <property name="yMax">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="title">
+     <string>Waveform 1</string>
+    </property>
+    <property name="timeSpan">
+     <number>32768</number>
+    </property>
+    <property name="tickRate">
+     <number>1024</number>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltWaveform3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>240</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(group):getWaveform2</string>
+    </property>
+    <property name="yMax">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="title">
+     <string>Waveform 2</string>
+    </property>
+    <property name="timeSpan">
+     <number>32768</number>
+    </property>
+    <property name="tickRate">
+     <number>1024</number>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltWaveform4">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>240</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(group):getWaveform3</string>
+    </property>
+    <property name="yMax">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="title">
+     <string>Waveform 3</string>
+    </property>
+    <property name="timeSpan">
+     <number>32768</number>
+    </property>
+    <property name="tickRate">
+     <number>1024</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblSizeWave1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform0Size</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtSizeWave1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform0Size</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtSizeWave2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform1Size</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>250</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblSizeWave2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform1Size</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtSizeWave3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform2Size</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>250</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblSizeWave3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform2Size</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtSizeWave4">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform3Size</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>250</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblSizeWave4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>250</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform3Size</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtPeriod1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform0Period</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Period</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPeriod1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform0Period</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtFinal1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform0Final</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblFinal1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform0Final</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Final</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtTop1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform0Top</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTop1">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform0Top</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>290</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Final</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtTop2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform1Top</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtPeriod2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform1Period</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPeriod2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform1Period</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtFinal2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform1Final</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>270</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Period</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>310</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTop2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform1Top</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblFinal2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform1Final</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>290</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Final</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtTop3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform2Top</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtPeriod3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform2Period</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPeriod3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform2Period</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtFinal3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform2Final</string>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>270</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Period</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>310</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTop3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform2Top</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblFinal3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform2Final</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>290</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Final</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtTop4">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform3Top</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtPeriod4">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform3Period</string>
+    </property>
+    <property name="leadingZeros">
+     <number>5</number>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblPeriod4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>270</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform3Period</string>
+    </property>
+   </widget>
+   <widget class="QENumericEdit" name="txtFinal4">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QE::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):setWaveform3Final</string>
+    </property>
+    <property name="autoScale">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="minimum">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>999.000000000000000</double>
+    </property>
+    <property name="writeOnChange">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>270</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Period</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>310</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblTop4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>310</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform3Top</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblFinal4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>290</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform3Final</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnPlot0">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform0.PROC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSelect0">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Waveform</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFile0">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>230</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSelect1">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>350</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Waveform</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnPlot1">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform1.PROC</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFile1">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>370</y>
+      <width>230</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSelect2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>350</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Waveform</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFile2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>370</y>
+      <width>230</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnPlot2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform2.PROC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSelect3">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>350</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Waveform</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFile3">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>370</y>
+      <width>230</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnPlot3">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>330</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Plot</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):getWaveform3.PROC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpload0">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>350</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upload</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpload1">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>350</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upload</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpload2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>350</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upload</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpload3">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>350</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Upload</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QENumericEdit</class>
+   <extends>QWidget</extends>
+   <header>QENumericEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPlot</class>
+   <extends>QEFrame</extends>
+   <header>QEPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

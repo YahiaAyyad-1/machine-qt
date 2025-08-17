@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormLiberaMain</class>
+ <widget class="QMainWindow" name="FormLiberaMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booster Libera</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+  <widget class="QGroupBox" name="titleGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>740</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>20</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConfiguration">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>180</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>General Configuration</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>741</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Liberas</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BO-DI-LIB1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:TEMP_MB</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:VHEALTH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_5">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FREE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_6">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:CPU</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_7">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:UPTIME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB1</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_8">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_9">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>40</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:CPU</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_10">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>40</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:UPTIME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_11">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>40</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FREE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BO-DI-LIB1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_12">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>40</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_13">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>40</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:VHEALTH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_14">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:TEMP_MB</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB2</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_15">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_16">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>60</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:CPU</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_17">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>60</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:UPTIME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_18">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FREE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BO-DI-LIB1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_19">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_20">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:VHEALTH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_21">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:TEMP_MB</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB3</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_22">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_23">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:CPU</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_24">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:UPTIME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_25">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FREE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BO-DI-LIB1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_26">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_27">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:VHEALTH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_28">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:TEMP_MB</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB4</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_29">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_30">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>100</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:CPU</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_31">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>100</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:UPTIME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_32">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>100</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FREE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BO-DI-LIB1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_33">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>100</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_34">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>100</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:VHEALTH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_35">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:TEMP_MB</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB5</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_36">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>120</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_37">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>120</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:CPU</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_38">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>120</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:UPTIME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_39">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>120</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FREE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BO-DI-LIB1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_40">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>120</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:FAN2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_41">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>120</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:VHEALTH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_42">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>120</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(group):SE:TEMP_MB</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>group=BO-DI-LIB6</string>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>20</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Expert</string>
+    </property>
+    <property name="program">
+     <string>libera el 1</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>40</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Expert</string>
+    </property>
+    <property name="program">
+     <string>libera el 2</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_3">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>60</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Expert</string>
+    </property>
+    <property name="program">
+     <string>libera el 3</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_4">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>80</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Expert</string>
+    </property>
+    <property name="program">
+     <string>libera el 4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_5">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>100</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Expert</string>
+    </property>
+    <property name="program">
+     <string>libera el 5</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_6">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>120</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Expert</string>
+    </property>
+    <property name="program">
+     <string>libera el 6</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fans</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Voltage</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>10</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Free RAM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>10</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CPU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>10</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Uptime</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

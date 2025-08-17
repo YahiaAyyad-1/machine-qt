@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiBoosterVacuumGC</class>
+ <widget class="QMainWindow" name="uiBoosterVacuumGC">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Booster Gauge Controllers</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-IMG1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>40</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>40</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>60</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>60</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_4">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>60</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>60</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-IMG1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_5">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>80</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_6">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>80</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_6">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>80</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-IMG1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_7">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>100</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>100</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_8">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>100</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_8">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>100</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-IMG1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-IMG1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_9">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>120</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_9">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>120</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_10">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>120</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>C01-IMG1</string>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-IMG1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_10">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>120</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_5">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=01</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_11">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>140</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>C02-PI1</string>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-PI1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_11">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_12">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>140</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_12">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_6">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>140</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=02</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_13">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>160</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>C03-PI1</string>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-PI1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_13">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>160</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_14">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>160</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_14">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_7">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=03</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_15">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>180</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL2:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+  </widget>
+  <widget class="QESubstitutedLabel" name="qesubstitutedlabel_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string>C05-PI1</string>
+   </property>
+   <property name="labelText" stdset="0">
+    <string>C$(cell)-PI1</string>
+   </property>
+   <property name="textSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_15">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>180</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointTwo</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_16">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>180</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1-REL1:setState</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_16">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>180</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:setSetpointOne</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QE::Never</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="variable" stdset="0">
+    <string>BOC$(cell)-VA-PI1:getPressure</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>cell=05</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QE::Floating</enum>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QE::Scientific</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pressure</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>79</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Setpoint 1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>79</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Setpoint 2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>79</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Relay 1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>69</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Relay 2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="titleGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>560</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnClose">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>91</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+  </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESubstitutedLabel</class>
+   <extends>QLabel</extends>
+   <header>QESubstitutedLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

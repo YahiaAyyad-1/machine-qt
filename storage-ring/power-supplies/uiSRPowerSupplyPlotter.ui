@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiSRPowerSupplyPlotter</class>
+ <widget class="QMainWindow" name="uiSRPowerSupplyPlotter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>871</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SR PS Plotter</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>800</y>
+      <width>911</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>20</y>
+       <width>85</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QEPlot" name="pltILoad">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>910</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>SRC01-PS-QF1:getIload</string>
+    </property>
+    <property name="yMax">
+     <double>300.000000000000000</double>
+    </property>
+    <property name="autoScale">
+     <bool>true</bool>
+    </property>
+    <property name="axisEnableX">
+     <bool>true</bool>
+    </property>
+    <property name="axisEnableY">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorY">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorY">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Load Current</string>
+    </property>
+    <property name="timeSpan">
+     <number>120</number>
+    </property>
+    <property name="tickRate">
+     <number>60</number>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltIEarth">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>450</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="yMax">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="autoScale">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorY">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorY">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Earth Current</string>
+    </property>
+   </widget>
+   <widget class="QEPlot" name="pltVoltage">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>410</y>
+      <width>450</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="yMax">
+     <double>15.000000000000000</double>
+    </property>
+    <property name="autoScale">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorY">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorX">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorY">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Voltage</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblILoad">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC01-PS-QF1:getIload</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltage">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>410</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC01-PS-QF1:getIload</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblIEarth">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>410</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SRC01-PS-QF1:getIearth</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPlot</class>
+   <extends>QEFrame</extends>
+   <header>QEPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

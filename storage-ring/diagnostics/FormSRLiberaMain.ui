@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormSRLiberaMain</class>
+ <widget class="QMainWindow" name="FormSRLiberaMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1011</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Storage Ring Libera</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QELabel" name="lblVoltageBM2_X_63">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>180</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=8</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_9">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>202</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>80</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=3</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_22">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=2</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_10">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>222</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CPU Load</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>10</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Avg</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_36">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR4</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_32">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>260</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=12</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_29">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>200</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=9</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_6">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>142</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_54">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>200</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=9</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>42</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR10</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_3">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>82</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_53">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>220</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=10</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_43">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>260</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=12</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_5">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>122</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Uptime</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>60</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR3</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_49">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>140</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=6</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_39">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>180</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=8</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_66">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>200</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=9</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_35">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=4</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_44">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>240</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=11</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_45">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>40</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=1</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="GBClose">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>990</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QSimpleShape" name="ledSync">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>20</y>
+       <width>20</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>5</red>
+       <green>240</green>
+       <blue>5</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>20</red>
+       <green>60</green>
+       <blue>20</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSync">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Synchonize All</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>20</y>
+       <width>100</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnHealth">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Health</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnGDX">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>160</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GDX Configuration</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEnablePm">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>20</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Enable PM</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_46">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>60</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=2</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_21">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_8">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>180</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=8</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_60">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>80</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=3</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_55">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>260</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=12</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_67">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>260</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=12</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_56">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>240</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=11</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_64">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>160</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=7</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_4">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>102</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_10">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=10</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_23">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=3</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_51">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>180</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=8</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_2">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>62</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_8">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>182</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_28">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>180</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=8</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_12">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>262</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_26">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>140</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR2</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_5">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>120</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=5</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_27">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>160</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=7</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_41">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>220</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=10</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_7">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>162</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR6</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_50">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>120</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=5</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_47">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>100</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=4</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_42">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=9</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_24">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=4</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_38">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>120</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=5</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_40">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>160</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=7</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_34">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>60</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=2</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_7">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>160</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=7</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_58">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>60</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=2</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_25">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>120</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=5</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_65">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>220</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR11</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_12">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>260</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=12</string>
+    </property>
+   </widget>
+   <widget class="QSimpleShape" name="led_11">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>242</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_62">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>120</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR9</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_11">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>240</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=11</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR8</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_61">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>140</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=6</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_68">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>240</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=11</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_37">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>140</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=6</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_48">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=3</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_31">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>240</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=11</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_6">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>140</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=6</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_33">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:uptime</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_57">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_30">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>220</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:cpu</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR5</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_59">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>100</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:free_mem</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=4</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_52">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>160</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:loadavg</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Free Memory</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_9">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>200</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=9</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SR-DI-LBR12</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="lblVoltageBM2_X_4">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(dev):ioc:ip:eth1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>dev=4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_1">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 1</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_1">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 1</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_1">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=1</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 1</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_1">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>40</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 1 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 1 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 1 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 1 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 2</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_2">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 2</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_2">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=2</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 2</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_3">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 3</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_3">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 3</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=3</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 3</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_4">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_4">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=4</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_5">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>120</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 5</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_5">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>120</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 5</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_5">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>120</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=5</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 5</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_6">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>140</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 6</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_6">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>140</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 6</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_6">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>140</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=6</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 6</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_7">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>160</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 7</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_7">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>160</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 7</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_7">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>160</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=7</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 7</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_8">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>180</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 8</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_8">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>180</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 8</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_8">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>180</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=8</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 8</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_9">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>200</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 9</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_9">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>200</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 9</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_9">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>200</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=9</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 9</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_10">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>220</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 10</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_10">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>220</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 10</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_10">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>220</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=10</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 10</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_11">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>240</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 11</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_11">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>240</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 11</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_11">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>240</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=11</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 11</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnEVR_12">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>260</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EVR</string>
+    </property>
+    <property name="program">
+     <string>libera edm evrx 12</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_12">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>260</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fans</string>
+    </property>
+    <property name="program">
+     <string>libera edm fans 12</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnGDX_12">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>260</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GDX</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>libera$(l):gdx:grouping:sfp:status3:clear</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>l=12</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+    <property name="program">
+     <string>libera edm gdx 12</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>60</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 2 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 2 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 2 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 2 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>80</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 3 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 3 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 3 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 3 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_4">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>100</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 4 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 4 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 4 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 4 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_5">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>120</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 5 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 5 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 5 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 5 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_6">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>140</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 6 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 6 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 6 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 6 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_7">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>160</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 7 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 7 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 7 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 7 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>180</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 8 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 8 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 8 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 8 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_9">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>200</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 9 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 9 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 9 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 9 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_10">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>220</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 10 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 10 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 10 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 10 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_11">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>240</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 11 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 11 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 11 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 11 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEMenuButton" name="mBPM_12">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>260</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="labelText" stdset="0">
+     <string>BPM</string>
+    </property>
+    <property name="menuEntries" stdset="0">
+     <string>&lt;MenuButton Version=&quot;1&quot;&gt; &lt;Item Name=&quot;BPM 1&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 12 1&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 2&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 12 2&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 3&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 12 3&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt; &lt;Item Name=&quot;BPM 4&quot;&gt;  &lt;Program&gt;   &lt;Name&gt;libera edm bpm 12 4&lt;/Name&gt;   &lt;Arguments&gt;&lt;/Arguments&gt;   &lt;Start_Option&gt;None&lt;/Start_Option&gt;  &lt;/Program&gt; &lt;/Item&gt;&lt;/MenuButton&gt;</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_13">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>40</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 1</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_14">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>60</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 2</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_15">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>80</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 3</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_16">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>100</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 4</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_17">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>120</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 5</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_18">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>160</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 7</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_19">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>140</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 6</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_20">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>180</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 8</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_21">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>200</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 9</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_22">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>240</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 11</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_23">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>220</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 10</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="btnFans_24">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>260</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Main</string>
+    </property>
+    <property name="program">
+     <string>libera qt main 12</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>10</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QtDM</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEMenuButton</class>
+   <extends>QWidget</extends>
+   <header>QEMenuButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiTL2Diagnostics</class>
+ <widget class="QMainWindow" name="uiTL2Diagnostics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TL2 Diagnostics</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>In</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>311</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QEPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>20</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Move</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="GBFoilMonitors">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>310</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Foil Monitors</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 0px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QESimpleShape" name="ledCAM1Out">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS1:isOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1,ch=X</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="ledCAM1In">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS1:isIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1,ch=X</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM1In">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>In</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM1Out">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnCAM1">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CAM</string>
+      </property>
+      <property name="program">
+       <string>run-basler-cam TL2-DI-CAM1 CAM</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 0px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QESimpleShape" name="ledCAM2Out">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS2:isOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1,ch=Y</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="ledCAM2In">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS2:isIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1,ch=X</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM2In">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>In</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=2</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM2Out">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=2</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnCAM2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CAM</string>
+      </property>
+      <property name="program">
+       <string>run-basler-cam TL2-DI-CAM2 CAM</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 0px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QESimpleShape" name="ledCAM3Out">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS3:isOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=2,ch=X</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="ledCAM3In">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS3:isIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1,ch=X</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM3In">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>In</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=3</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM3Out">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=3</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnCAM3">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CAM</string>
+      </property>
+      <property name="program">
+       <string>run-basler-cam TL2-DI-CAM3 CAM</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+     border: 0px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QESimpleShape" name="ledCAM4Out">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS4:isOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=2,ch=Y</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QESimpleShape" name="ledCAM4In">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>16</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="shape">
+       <enum>QSimpleShape::circle</enum>
+      </property>
+      <property name="colour0" stdset="0">
+       <color>
+        <red>20</red>
+        <green>50</green>
+        <blue>20</blue>
+       </color>
+      </property>
+      <property name="colour1" stdset="0">
+       <color>
+        <red>5</red>
+        <green>240</green>
+        <blue>5</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS4:isIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=1,ch=X</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QE::Never</enum>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM4In">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>In</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setIn</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=4</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnMoveCAM4Out">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>TL2-DI-FS$(corrector):setOut</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>corrector=4</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="btnCAM4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>40</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CAM</string>
+      </property>
+      <property name="program">
+       <string>run-basler-cam TL2-DI-CAM4 CAM</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TL2-CAM1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TL2-CAM2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TL2-CAM3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TL2-CAM4</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="btnScreensOut">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>290</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Move All Screens Out</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>40</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>TL2-DI-FS2:isKeyOn</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>310</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Note: Contact Safey Officer if you need to move IN TL2-Screen2, while Red Light is ON</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

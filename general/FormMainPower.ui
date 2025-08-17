@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormMainPower</class>
+ <widget class="QMainWindow" name="FormMainPower">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>369</width>
+    <height>242</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Power</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="titleGroupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>176</y>
+      <width>350</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+ 	background-color: rgb(255, 255, 255);
+     border: 1px solid black;
+     border-radius: 5px;
+     margin-top: 0.5em;
+ }
+ 
+ QGroupBox::title {
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+ }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>267</x>
+       <y>20</y>
+       <width>70</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>SR-PS-DB:reset</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>14</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MDB-SR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>34</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q1-SMDB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>54</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q2-SMDB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>74</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q3-SMDB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>94</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q4-SMDB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>124</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MDB-RF</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>144</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SMDB-RF</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>16</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-MDB:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_2">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>36</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q1:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_3">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>56</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q2:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_4">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>76</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q3:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_5">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>96</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q4:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_6">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>126</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-MDB:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_7">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>146</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Status</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>20</red>
+      <green>60</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>5</red>
+      <green>240</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-MDB:isPowerON</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_8">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>56</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q2:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_9">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>96</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q4:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_10">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>36</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q1:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_11">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>146</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-MDB:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_12">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>16</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-MDB:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_13">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>126</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-RF-MDB:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QESimpleShape" name="qesimpleshape_14">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>76</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="ledType">
+     <enum>QSimpleShape::Error</enum>
+    </property>
+    <property name="colour0" stdset="0">
+     <color>
+      <red>60</red>
+      <green>20</green>
+      <blue>20</blue>
+     </color>
+    </property>
+    <property name="colour1" stdset="0">
+     <color>
+      <red>240</red>
+      <green>5</green>
+      <blue>5</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SR-SMDB-Q3:isEmergency</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>14</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR1:ActiveEnergyDelivered</string>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_2">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>125</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR2:ActiveEnergyDelivered</string>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_5">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>33</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR1:Current_Avg</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_11">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>33</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR1:VoltageL-N_Avg</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_6">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>144</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR2:Current_Avg</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_12">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>144</y>
+      <width>89</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR2:VoltageL-N_Avg</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_20">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>14</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR1:ActivePowerTotal_KW</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="currentState_21">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>125</y>
+      <width>89</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>SA-PS-PMTR2:ActivePowerTotal_KW</string>
+    </property>
+    <property name="precision">
+     <number>0</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDetails">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>196</y>
+      <width>70</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Details</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

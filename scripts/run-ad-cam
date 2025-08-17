@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# export EPICS_DISPLAY_PATH=/opt/epics/support/areaDetector/core/op/adl:/opt/epics/support/areaDetector/genicam/op/adl:/opt/epics/support/areaDetector/aravis/op/adl:/opt/epics/support/areaDetector/genicam/op/adl
+# medm -x -macro "P=${1}:,R=${2}:,C=Basler-acA1300-30gm" ADAravis.adl &
+
+[[ ! -d /home/control/nfs/machine/gui ]] && {
+    echo "NFS is not mounted. exiting."
+    exit 1
+}
+
+export QT_PLUGIN_PATH=/opt/epics/extensions/caqtdm
+cd /home/control/nfs/machine/gui/caqtdm/ad
+caQtDM -macro "P=${1}:,R=${2}:,C=Basler-acA1300-30gm" ADPylonCam.ui &
+
+# cd /home/control/nfs/machine/gui/medm/cam
+# medm -x -macro "P=${1}:,R=${2}:,C=Basler-acA1300-30gm" ADPylonCam.adl &
